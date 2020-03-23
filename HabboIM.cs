@@ -66,13 +66,13 @@ namespace HabboIM
         public static uint nxt_rr = 30;
 
         //LICENCE
-        public static string licence = "www.habbo.im";
+        public static string licence = "";
         public static string discord = "https://discord.gg/Snt8yZy";
 
 
         public static int lotto_einsatz;
 
-        // Unnötige Lottokacke ende.
+        // UnnÃ¶tige Lottokacke ende.
         public static int Build
         {
             get
@@ -351,7 +351,7 @@ namespace HabboIM
         public void Initialize()
         {
             /******************************************************************
-           * Actually Developer: Affectum, Hazed ©
+           * Actually Developer: Affectum, Hazed Â©
            * Base of this Server: "Phoenix by Sojobo" & "Uber by Meth0d" 
            * Axed Scripting Vulnerability is here fixed!
            * SQLi Vulnerabilities are here fixed
@@ -369,8 +369,8 @@ namespace HabboIM
            *  - There is a Advertisement Filter which blocks certain words and Hotel names
            *  
            * Many Vulnerabilities which arent released are here fixed
-           * © Dieser Server gehört nur Affectum und hat die Basis vom Phoenix Emulator 3.11.0
-           *   Alle Rechte vorbehalten bei Affectum 2016 ©
+           * Â© Dieser Server gehÃ¶rt nur Affectum und hat die Basis vom Phoenix Emulator 3.11.0
+           *   Alle Rechte vorbehalten bei Affectum 2016 Â©
            ******************************************************************/
 
             HabboIM.ServerStarted = DateTime.Now;
@@ -429,7 +429,7 @@ namespace HabboIM
        
 
             Console.ForegroundColor = ConsoleColor.White;
-            Console.WriteLine("Lotto gestartet! Nächste Ziehung um " + (hour_lastlotto+1) + ":00 Uhr");
+            Console.WriteLine("Lotto gestartet! NÃ¤chste Ziehung um " + (hour_lastlotto+1) + ":00 Uhr");
             Console.ResetColor();
 
             Console.BackgroundColor = ConsoleColor.Black;
@@ -593,7 +593,7 @@ namespace HabboIM
                 catch
                 {
                     Console.BackgroundColor = ConsoleColor.Black;
-                    Logging.WriteLine("Fehler bei wat weiß ich.");
+                    Logging.WriteLine("Fehler bei wat weiÃŸ ich.");
                     Logging.WriteLine("Press any key to shut down ...");
                     Console.ReadKey(true);
                     HabboIM.Destroy();
