@@ -1,0 +1,16 @@
+using System;
+using HabboIM.HabboHotel.GameClients;
+using HabboIM.Messages;
+namespace HabboIM.Communication.Messages.Navigator
+{
+	internal sealed class MyRoomsSearchMessageEvent : Interface
+	{
+		public void Handle(GameClient Session, ClientMessage Event)
+		{
+            if (Session != null)
+            {
+                Session.SendMessage(HabboIM.GetGame().GetNavigator().method_12(Session, -3));
+            }
+		}
+	}
+}

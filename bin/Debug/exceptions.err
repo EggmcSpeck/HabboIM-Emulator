@@ -1,0 +1,568 @@
+17.03.2020 21:10:35: Error: System.ArgumentOutOfRangeException: Das angegebene Argument liegt au?erhalb des g?ltigen Wertebereichs.
+Parametername: index
+   bei System.Linq.Enumerable.ElementAt[TSource](IEnumerable`1 source, Int32 index)
+   bei HabboIM.HabboHotel.Navigators.Navigator.method_12(GameClient Session, Int32 int_0) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Navigators\Navigator.cs:Zeile 539.
+   bei HabboIM.HabboHotel.Navigators.Navigator.SerializeNavigator(GameClient Session, Int32 int_0) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Navigators\Navigator.cs:Zeile 317.
+   bei HabboIM.Communication.Messages.Navigator.PopularRoomsSearchMessageEvent.Handle(GameClient Session, ClientMessage Event) in C:\inetpub\habboim\AI EMU_CRACKED\Communication\Messages\Navigator\PopularRoomsSearchMessageEvent.cs:Zeile 12.
+   bei HabboIM.HabboHotel.GameClients.GameClient.ParsePacket(Byte[]& bytes) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\GameClients\GameClient.cs:Zeile 584.
+
+17.03.2020 21:17:31: Error: System.ArgumentOutOfRangeException: Das angegebene Argument liegt au?erhalb des g?ltigen Wertebereichs.
+Parametername: index
+   bei System.Linq.Enumerable.ElementAt[TSource](IEnumerable`1 source, Int32 index)
+   bei HabboIM.HabboHotel.Navigators.Navigator.method_12(GameClient Session, Int32 int_0) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Navigators\Navigator.cs:Zeile 539.
+   bei HabboIM.HabboHotel.Navigators.Navigator.SerializeNavigator(GameClient Session, Int32 int_0) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Navigators\Navigator.cs:Zeile 317.
+   bei HabboIM.Communication.Messages.Navigator.PopularRoomsSearchMessageEvent.Handle(GameClient Session, ClientMessage Event) in C:\inetpub\habboim\AI EMU_CRACKED\Communication\Messages\Navigator\PopularRoomsSearchMessageEvent.cs:Zeile 12.
+   bei HabboIM.HabboHotel.GameClients.GameClient.ParsePacket(Byte[]& bytes) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\GameClients\GameClient.cs:Zeile 584.
+
+17.03.2020 22:37:43: Error: MySql.Data.MySqlClient.MySqlException (0x80004005): Duplicate entry '5' for key 'PRIMARY'
+   bei MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   bei MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   bei MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   bei MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   bei MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   bei MySql.Data.MySqlClient.MySqlCommand.ExecuteScalar()
+   bei HabboIM.Storage.DatabaseClient.ExecuteQuery(String sQuery, Int32 timeout)
+   bei HabboIM.HabboHotel.Users.Inventory.InventoryComponent.method_11(UInt32 uint_1, UInt32 uint_2, String string_0, Boolean bool_0)
+   bei HabboIM.HabboHotel.Catalogs.Catalog.method_9(GameClient Session, Item Item, Int32 int_0, String string_0, Boolean bool_0, UInt32 uint_1)
+   bei HabboIM.HabboHotel.Catalogs.Catalog.method_6(GameClient Session, Int32 int_0, UInt32 uint_1, String string_0, Boolean bool_0, String string_1, String string_2, Boolean bool_1)
+   bei HabboIM.Communication.Messages.Catalog.PurchaseFromCatalogEvent.Handle(GameClient Session, ClientMessage Event)
+   bei HabboIM.HabboHotel.GameClients.GameClient.ParsePacket(Byte[]& bytes)
+
+17.03.2020 23:37:07: Error: MySql.Data.MySqlClient.MySqlException (0x80004005): Duplicate entry '257' for key 'PRIMARY'
+   bei MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   bei MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   bei MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   bei MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   bei MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   bei MySql.Data.MySqlClient.MySqlCommand.ExecuteScalar()
+   bei HabboIM.Storage.DatabaseClient.ExecuteQuery(String sQuery, Int32 timeout) in C:\inetpub\habboim\AI EMU_CRACKED\Storage\DatabaseClient.cs:Zeile 33.
+   bei HabboIM.HabboHotel.Users.Inventory.InventoryComponent.method_11(UInt32 uint_1, UInt32 uint_2, String string_0, Boolean bool_0) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Users\Inventory\InventoryComponent.cs:Zeile 299.
+   bei HabboIM.HabboHotel.Catalogs.Catalog.method_9(GameClient Session, Item Item, Int32 int_0, String string_0, Boolean bool_0, UInt32 uint_1) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Catalogs\Catalog.cs:Zeile 447.
+   bei HabboIM.HabboHotel.Catalogs.Catalog.method_6(GameClient Session, Int32 int_0, UInt32 uint_1, String string_0, Boolean bool_0, String string_1, String string_2, Boolean bool_1) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Catalogs\Catalog.cs:Zeile 374.
+   bei HabboIM.Communication.Messages.Catalog.PurchaseFromCatalogEvent.Handle(GameClient Session, ClientMessage Event) in C:\inetpub\habboim\AI EMU_CRACKED\Communication\Messages\Catalog\PurchaseFromCatalogEvent.cs:Zeile 44.
+   bei HabboIM.HabboHotel.GameClients.GameClient.ParsePacket(Byte[]& bytes) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\GameClients\GameClient.cs:Zeile 584.
+
+17.03.2020 23:44:23: Error: MySql.Data.MySqlClient.MySqlException (0x80004005): Duplicate entry '258' for key 'PRIMARY'
+   bei MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   bei MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   bei MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   bei MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   bei MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   bei MySql.Data.MySqlClient.MySqlCommand.ExecuteScalar()
+   bei HabboIM.Storage.DatabaseClient.ExecuteQuery(String sQuery, Int32 timeout) in C:\inetpub\habboim\AI EMU_CRACKED\Storage\DatabaseClient.cs:Zeile 33.
+   bei HabboIM.HabboHotel.Users.Inventory.InventoryComponent.method_11(UInt32 uint_1, UInt32 uint_2, String string_0, Boolean bool_0) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Users\Inventory\InventoryComponent.cs:Zeile 299.
+   bei HabboIM.HabboHotel.Catalogs.Catalog.method_9(GameClient Session, Item Item, Int32 int_0, String string_0, Boolean bool_0, UInt32 uint_1) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Catalogs\Catalog.cs:Zeile 447.
+   bei HabboIM.HabboHotel.Catalogs.Catalog.method_6(GameClient Session, Int32 int_0, UInt32 uint_1, String string_0, Boolean bool_0, String string_1, String string_2, Boolean bool_1) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Catalogs\Catalog.cs:Zeile 374.
+   bei HabboIM.Communication.Messages.Catalog.PurchaseFromCatalogEvent.Handle(GameClient Session, ClientMessage Event) in C:\inetpub\habboim\AI EMU_CRACKED\Communication\Messages\Catalog\PurchaseFromCatalogEvent.cs:Zeile 44.
+   bei HabboIM.HabboHotel.GameClients.GameClient.ParsePacket(Byte[]& bytes) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\GameClients\GameClient.cs:Zeile 584.
+
+18.03.2020 00:08:26: Unknown base: 4183
+
+18.03.2020 00:08:26: Error: System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei HabboIM.HabboHotel.Items.UserItem.method_0(ServerMessage Message, Boolean bool_0) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Items\UserItem.cs:Zeile 26.
+   bei HabboIM.HabboHotel.Users.Inventory.InventoryComponent.method_13() in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Users\Inventory\InventoryComponent.cs:Zeile 408.
+   bei HabboIM.Communication.Messages.Inventory.Furni.RequestFurniInventoryEvent.Handle(GameClient Session, ClientMessage Event) in C:\inetpub\habboim\AI EMU_CRACKED\Communication\Messages\Inventory\Furni\RequestFurniInventoryEvent.cs:Zeile 18.
+   bei HabboIM.HabboHotel.GameClients.GameClient.ParsePacket(Byte[]& bytes) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\GameClients\GameClient.cs:Zeile 584.
+
+18.03.2020 00:08:52: System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei HabboIM.HabboHotel.Users.Inventory.InventoryComponent..ctor(UInt32 userId, GameClient client, UserDataFactory userdata) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Users\Inventory\InventoryComponent.cs:Zeile 82.
+   bei HabboIM.HabboHotel.Users.Habbo..ctor(Double support_last, Int32 bez_level, Double lovedate, Int32 kissed, Int32 hugged, Int32 lovepoints, Double kisstime, Double hugtime, Int32 boyfriend, Int32 gc, String static_id, Double jailtime, Int32 jail, UInt32 UserId, String Username, String Name, String SSO, UInt32 Rank, String Motto, String Look, String Gender, Int32 Credits, Int32 Pixels, Double Activity_Points_LastUpdate, String DataCadastro, Boolean Muted, UInt32 HomeRoom, Int32 NewbieStatus, Boolean BlockNewFriends, Boolean HideInRoom, Boolean HideOnline, Boolean Vip, Int32 Volume, Int32 Points, Boolean AcceptTrading, String LastIp, GameClient Session, UserDataFactory userDataFactory, String last_online, Int32 daily_respect_points, Int32 daily_pet_respect_points, Double vipha_last, Double viphal_last, Boolean FriendStream, Boolean Raumalert, Boolean WerberCmd, String working, String ChangeNameTime, Boolean ChangeName) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Users\Habbo.cs:Zeile 570.
+   bei HabboIM.HabboHotel.Users.Authenticator.Authenticator.CreateHabbo(DataRow habboData, String ssoTicket, GameClient session, UserDataFactory otherData) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Users\Authenticator\Authenticator.cs:Zeile 50.
+   bei HabboIM.HabboHotel.Users.Authenticator.Authenticator.CreateHabbo(String ssoTicket, GameClient Session, UserDataFactory userData, UserDataFactory otherData) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Users\Authenticator\Authenticator.cs:Zeile 12.
+   bei HabboIM.HabboHotel.GameClients.GameClient.method_6(String string_0) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\GameClients\GameClient.cs:Zeile 156.
+
+18.03.2020 00:10:52: Unknown base: 4183
+
+18.03.2020 00:10:52: Error: System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei HabboIM.HabboHotel.Items.UserItem.method_0(ServerMessage Message, Boolean bool_0) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Items\UserItem.cs:Zeile 26.
+   bei HabboIM.HabboHotel.Users.Inventory.InventoryComponent.method_13() in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Users\Inventory\InventoryComponent.cs:Zeile 408.
+   bei HabboIM.Communication.Messages.Inventory.Furni.RequestFurniInventoryEvent.Handle(GameClient Session, ClientMessage Event) in C:\inetpub\habboim\AI EMU_CRACKED\Communication\Messages\Inventory\Furni\RequestFurniInventoryEvent.cs:Zeile 18.
+   bei HabboIM.HabboHotel.GameClients.GameClient.ParsePacket(Byte[]& bytes) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\GameClients\GameClient.cs:Zeile 584.
+
+18.03.2020 00:11:21: System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei HabboIM.HabboHotel.Users.Inventory.InventoryComponent..ctor(UInt32 userId, GameClient client, UserDataFactory userdata) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Users\Inventory\InventoryComponent.cs:Zeile 82.
+   bei HabboIM.HabboHotel.Users.Habbo..ctor(Double support_last, Int32 bez_level, Double lovedate, Int32 kissed, Int32 hugged, Int32 lovepoints, Double kisstime, Double hugtime, Int32 boyfriend, Int32 gc, String static_id, Double jailtime, Int32 jail, UInt32 UserId, String Username, String Name, String SSO, UInt32 Rank, String Motto, String Look, String Gender, Int32 Credits, Int32 Pixels, Double Activity_Points_LastUpdate, String DataCadastro, Boolean Muted, UInt32 HomeRoom, Int32 NewbieStatus, Boolean BlockNewFriends, Boolean HideInRoom, Boolean HideOnline, Boolean Vip, Int32 Volume, Int32 Points, Boolean AcceptTrading, String LastIp, GameClient Session, UserDataFactory userDataFactory, String last_online, Int32 daily_respect_points, Int32 daily_pet_respect_points, Double vipha_last, Double viphal_last, Boolean FriendStream, Boolean Raumalert, Boolean WerberCmd, String working, String ChangeNameTime, Boolean ChangeName) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Users\Habbo.cs:Zeile 570.
+   bei HabboIM.HabboHotel.Users.Authenticator.Authenticator.CreateHabbo(DataRow habboData, String ssoTicket, GameClient session, UserDataFactory otherData) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Users\Authenticator\Authenticator.cs:Zeile 50.
+   bei HabboIM.HabboHotel.Users.Authenticator.Authenticator.CreateHabbo(String ssoTicket, GameClient Session, UserDataFactory userData, UserDataFactory otherData) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Users\Authenticator\Authenticator.cs:Zeile 12.
+   bei HabboIM.HabboHotel.GameClients.GameClient.method_6(String string_0) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\GameClients\GameClient.cs:Zeile 156.
+
+18.03.2020 00:11:49: System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei HabboIM.HabboHotel.Users.Inventory.InventoryComponent..ctor(UInt32 userId, GameClient client, UserDataFactory userdata) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Users\Inventory\InventoryComponent.cs:Zeile 82.
+   bei HabboIM.HabboHotel.Users.Habbo..ctor(Double support_last, Int32 bez_level, Double lovedate, Int32 kissed, Int32 hugged, Int32 lovepoints, Double kisstime, Double hugtime, Int32 boyfriend, Int32 gc, String static_id, Double jailtime, Int32 jail, UInt32 UserId, String Username, String Name, String SSO, UInt32 Rank, String Motto, String Look, String Gender, Int32 Credits, Int32 Pixels, Double Activity_Points_LastUpdate, String DataCadastro, Boolean Muted, UInt32 HomeRoom, Int32 NewbieStatus, Boolean BlockNewFriends, Boolean HideInRoom, Boolean HideOnline, Boolean Vip, Int32 Volume, Int32 Points, Boolean AcceptTrading, String LastIp, GameClient Session, UserDataFactory userDataFactory, String last_online, Int32 daily_respect_points, Int32 daily_pet_respect_points, Double vipha_last, Double viphal_last, Boolean FriendStream, Boolean Raumalert, Boolean WerberCmd, String working, String ChangeNameTime, Boolean ChangeName) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Users\Habbo.cs:Zeile 570.
+   bei HabboIM.HabboHotel.Users.Authenticator.Authenticator.CreateHabbo(DataRow habboData, String ssoTicket, GameClient session, UserDataFactory otherData) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Users\Authenticator\Authenticator.cs:Zeile 50.
+   bei HabboIM.HabboHotel.Users.Authenticator.Authenticator.CreateHabbo(String ssoTicket, GameClient Session, UserDataFactory userData, UserDataFactory otherData) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Users\Authenticator\Authenticator.cs:Zeile 12.
+   bei HabboIM.HabboHotel.GameClients.GameClient.method_6(String string_0) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\GameClients\GameClient.cs:Zeile 156.
+
+18.03.2020 00:12:57: System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei HabboIM.HabboHotel.Users.Inventory.InventoryComponent..ctor(UInt32 userId, GameClient client, UserDataFactory userdata) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Users\Inventory\InventoryComponent.cs:Zeile 82.
+   bei HabboIM.HabboHotel.Users.Habbo..ctor(Double support_last, Int32 bez_level, Double lovedate, Int32 kissed, Int32 hugged, Int32 lovepoints, Double kisstime, Double hugtime, Int32 boyfriend, Int32 gc, String static_id, Double jailtime, Int32 jail, UInt32 UserId, String Username, String Name, String SSO, UInt32 Rank, String Motto, String Look, String Gender, Int32 Credits, Int32 Pixels, Double Activity_Points_LastUpdate, String DataCadastro, Boolean Muted, UInt32 HomeRoom, Int32 NewbieStatus, Boolean BlockNewFriends, Boolean HideInRoom, Boolean HideOnline, Boolean Vip, Int32 Volume, Int32 Points, Boolean AcceptTrading, String LastIp, GameClient Session, UserDataFactory userDataFactory, String last_online, Int32 daily_respect_points, Int32 daily_pet_respect_points, Double vipha_last, Double viphal_last, Boolean FriendStream, Boolean Raumalert, Boolean WerberCmd, String working, String ChangeNameTime, Boolean ChangeName) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Users\Habbo.cs:Zeile 570.
+   bei HabboIM.HabboHotel.Users.Authenticator.Authenticator.CreateHabbo(DataRow habboData, String ssoTicket, GameClient session, UserDataFactory otherData) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Users\Authenticator\Authenticator.cs:Zeile 50.
+   bei HabboIM.HabboHotel.Users.Authenticator.Authenticator.CreateHabbo(String ssoTicket, GameClient Session, UserDataFactory userData, UserDataFactory otherData) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Users\Authenticator\Authenticator.cs:Zeile 12.
+   bei HabboIM.HabboHotel.GameClients.GameClient.method_6(String string_0) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\GameClients\GameClient.cs:Zeile 156.
+
+18.03.2020 12:51:07: Error: MySql.Data.MySqlClient.MySqlException (0x80004005): Duplicate entry '267' for key 'PRIMARY'
+   bei MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   bei MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   bei MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   bei MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   bei MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   bei MySql.Data.MySqlClient.MySqlCommand.ExecuteScalar()
+   bei HabboIM.Storage.DatabaseClient.ExecuteQuery(String sQuery, Int32 timeout) in C:\inetpub\habboim\AI EMU_CRACKED\Storage\DatabaseClient.cs:Zeile 33.
+   bei HabboIM.HabboHotel.Users.Inventory.InventoryComponent.method_11(UInt32 uint_1, UInt32 uint_2, String string_0, Boolean bool_0) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Users\Inventory\InventoryComponent.cs:Zeile 299.
+   bei HabboIM.HabboHotel.Catalogs.Catalog.method_9(GameClient Session, Item Item, Int32 int_0, String string_0, Boolean bool_0, UInt32 uint_1) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Catalogs\Catalog.cs:Zeile 447.
+   bei HabboIM.HabboHotel.Catalogs.Catalog.method_6(GameClient Session, Int32 int_0, UInt32 uint_1, String string_0, Boolean bool_0, String string_1, String string_2, Boolean bool_1) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Catalogs\Catalog.cs:Zeile 374.
+   bei HabboIM.Communication.Messages.Catalog.PurchaseFromCatalogEvent.Handle(GameClient Session, ClientMessage Event) in C:\inetpub\habboim\AI EMU_CRACKED\Communication\Messages\Catalog\PurchaseFromCatalogEvent.cs:Zeile 44.
+   bei HabboIM.HabboHotel.GameClients.GameClient.ParsePacket(Byte[]& bytes) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\GameClients\GameClient.cs:Zeile 584.
+
+18.03.2020 12:53:50: Error: MySql.Data.MySqlClient.MySqlException (0x80004005): Duplicate entry '268' for key 'PRIMARY'
+   bei MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   bei MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   bei MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   bei MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   bei MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   bei MySql.Data.MySqlClient.MySqlCommand.ExecuteScalar()
+   bei HabboIM.Storage.DatabaseClient.ExecuteQuery(String sQuery, Int32 timeout) in C:\inetpub\habboim\AI EMU_CRACKED\Storage\DatabaseClient.cs:Zeile 33.
+   bei HabboIM.HabboHotel.Users.Inventory.InventoryComponent.method_11(UInt32 uint_1, UInt32 uint_2, String string_0, Boolean bool_0) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Users\Inventory\InventoryComponent.cs:Zeile 299.
+   bei HabboIM.HabboHotel.Catalogs.Catalog.method_9(GameClient Session, Item Item, Int32 int_0, String string_0, Boolean bool_0, UInt32 uint_1) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Catalogs\Catalog.cs:Zeile 447.
+   bei HabboIM.HabboHotel.Catalogs.Catalog.method_6(GameClient Session, Int32 int_0, UInt32 uint_1, String string_0, Boolean bool_0, String string_1, String string_2, Boolean bool_1) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Catalogs\Catalog.cs:Zeile 374.
+   bei HabboIM.Communication.Messages.Catalog.PurchaseFromCatalogEvent.Handle(GameClient Session, ClientMessage Event) in C:\inetpub\habboim\AI EMU_CRACKED\Communication\Messages\Catalog\PurchaseFromCatalogEvent.cs:Zeile 44.
+   bei HabboIM.HabboHotel.GameClients.GameClient.ParsePacket(Byte[]& bytes) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\GameClients\GameClient.cs:Zeile 584.
+
+18.03.2020 12:55:01: Error: MySql.Data.MySqlClient.MySqlException (0x80004005): Duplicate entry '269' for key 'PRIMARY'
+   bei MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   bei MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   bei MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   bei MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   bei MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   bei MySql.Data.MySqlClient.MySqlCommand.ExecuteScalar()
+   bei HabboIM.Storage.DatabaseClient.ExecuteQuery(String sQuery, Int32 timeout) in C:\inetpub\habboim\AI EMU_CRACKED\Storage\DatabaseClient.cs:Zeile 33.
+   bei HabboIM.HabboHotel.Users.Inventory.InventoryComponent.method_11(UInt32 uint_1, UInt32 uint_2, String string_0, Boolean bool_0) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Users\Inventory\InventoryComponent.cs:Zeile 299.
+   bei HabboIM.HabboHotel.Catalogs.Catalog.method_9(GameClient Session, Item Item, Int32 int_0, String string_0, Boolean bool_0, UInt32 uint_1) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Catalogs\Catalog.cs:Zeile 447.
+   bei HabboIM.HabboHotel.Catalogs.Catalog.method_6(GameClient Session, Int32 int_0, UInt32 uint_1, String string_0, Boolean bool_0, String string_1, String string_2, Boolean bool_1) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Catalogs\Catalog.cs:Zeile 374.
+   bei HabboIM.Communication.Messages.Catalog.PurchaseFromCatalogEvent.Handle(GameClient Session, ClientMessage Event) in C:\inetpub\habboim\AI EMU_CRACKED\Communication\Messages\Catalog\PurchaseFromCatalogEvent.cs:Zeile 44.
+   bei HabboIM.HabboHotel.GameClients.GameClient.ParsePacket(Byte[]& bytes) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\GameClients\GameClient.cs:Zeile 584.
+
+18.03.2020 12:57:06: Error: MySql.Data.MySqlClient.MySqlException (0x80004005): Duplicate entry '270' for key 'PRIMARY'
+   bei MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   bei MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   bei MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   bei MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   bei MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   bei MySql.Data.MySqlClient.MySqlCommand.ExecuteScalar()
+   bei HabboIM.Storage.DatabaseClient.ExecuteQuery(String sQuery, Int32 timeout) in C:\inetpub\habboim\AI EMU_CRACKED\Storage\DatabaseClient.cs:Zeile 33.
+   bei HabboIM.HabboHotel.Users.Inventory.InventoryComponent.method_11(UInt32 uint_1, UInt32 uint_2, String string_0, Boolean bool_0) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Users\Inventory\InventoryComponent.cs:Zeile 299.
+   bei HabboIM.HabboHotel.Catalogs.Catalog.method_9(GameClient Session, Item Item, Int32 int_0, String string_0, Boolean bool_0, UInt32 uint_1) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Catalogs\Catalog.cs:Zeile 447.
+   bei HabboIM.HabboHotel.Catalogs.Catalog.method_6(GameClient Session, Int32 int_0, UInt32 uint_1, String string_0, Boolean bool_0, String string_1, String string_2, Boolean bool_1) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Catalogs\Catalog.cs:Zeile 374.
+   bei HabboIM.Communication.Messages.Catalog.PurchaseFromCatalogEvent.Handle(GameClient Session, ClientMessage Event) in C:\inetpub\habboim\AI EMU_CRACKED\Communication\Messages\Catalog\PurchaseFromCatalogEvent.cs:Zeile 44.
+   bei HabboIM.HabboHotel.GameClients.GameClient.ParsePacket(Byte[]& bytes) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\GameClients\GameClient.cs:Zeile 584.
+
+18.03.2020 13:00:32: Error: MySql.Data.MySqlClient.MySqlException (0x80004005): Duplicate entry '7' for key 'PRIMARY'
+   bei MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   bei MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   bei MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   bei MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   bei MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   bei MySql.Data.MySqlClient.MySqlCommand.ExecuteScalar()
+   bei HabboIM.Storage.DatabaseClient.ExecuteQuery(String sQuery, Int32 timeout) in C:\inetpub\habboim\AI EMU_CRACKED\Storage\DatabaseClient.cs:Zeile 33.
+   bei HabboIM.HabboHotel.Users.Inventory.InventoryComponent.method_11(UInt32 uint_1, UInt32 uint_2, String string_0, Boolean bool_0) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Users\Inventory\InventoryComponent.cs:Zeile 299.
+   bei HabboIM.HabboHotel.Catalogs.Catalog.method_9(GameClient Session, Item Item, Int32 int_0, String string_0, Boolean bool_0, UInt32 uint_1) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Catalogs\Catalog.cs:Zeile 447.
+   bei HabboIM.HabboHotel.Catalogs.Catalog.method_6(GameClient Session, Int32 int_0, UInt32 uint_1, String string_0, Boolean bool_0, String string_1, String string_2, Boolean bool_1) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Catalogs\Catalog.cs:Zeile 374.
+   bei HabboIM.Communication.Messages.Catalog.PurchaseFromCatalogEvent.Handle(GameClient Session, ClientMessage Event) in C:\inetpub\habboim\AI EMU_CRACKED\Communication\Messages\Catalog\PurchaseFromCatalogEvent.cs:Zeile 44.
+   bei HabboIM.HabboHotel.GameClients.GameClient.ParsePacket(Byte[]& bytes) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\GameClients\GameClient.cs:Zeile 584.
+
+18.03.2020 13:01:22: Error: MySql.Data.MySqlClient.MySqlException (0x80004005): Duplicate entry '8' for key 'PRIMARY'
+   bei MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   bei MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   bei MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   bei MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   bei MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   bei MySql.Data.MySqlClient.MySqlCommand.ExecuteScalar()
+   bei HabboIM.Storage.DatabaseClient.ExecuteQuery(String sQuery, Int32 timeout) in C:\inetpub\habboim\AI EMU_CRACKED\Storage\DatabaseClient.cs:Zeile 33.
+   bei HabboIM.HabboHotel.Users.Inventory.InventoryComponent.method_11(UInt32 uint_1, UInt32 uint_2, String string_0, Boolean bool_0) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Users\Inventory\InventoryComponent.cs:Zeile 299.
+   bei HabboIM.HabboHotel.Catalogs.Catalog.method_9(GameClient Session, Item Item, Int32 int_0, String string_0, Boolean bool_0, UInt32 uint_1) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Catalogs\Catalog.cs:Zeile 447.
+   bei HabboIM.HabboHotel.Catalogs.Catalog.method_6(GameClient Session, Int32 int_0, UInt32 uint_1, String string_0, Boolean bool_0, String string_1, String string_2, Boolean bool_1) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Catalogs\Catalog.cs:Zeile 374.
+   bei HabboIM.Communication.Messages.Catalog.PurchaseFromCatalogEvent.Handle(GameClient Session, ClientMessage Event) in C:\inetpub\habboim\AI EMU_CRACKED\Communication\Messages\Catalog\PurchaseFromCatalogEvent.cs:Zeile 44.
+   bei HabboIM.HabboHotel.GameClients.GameClient.ParsePacket(Byte[]& bytes) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\GameClients\GameClient.cs:Zeile 584.
+
+18.03.2020 13:04:10: Error: MySql.Data.MySqlClient.MySqlException (0x80004005): Duplicate entry '1' for key 'PRIMARY'
+   bei MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   bei MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   bei MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   bei MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   bei MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   bei MySql.Data.MySqlClient.MySqlCommand.ExecuteScalar()
+   bei HabboIM.Storage.DatabaseClient.ExecuteQuery(String sQuery, Int32 timeout) in C:\inetpub\habboim\AI EMU_CRACKED\Storage\DatabaseClient.cs:Zeile 33.
+   bei HabboIM.HabboHotel.Users.Inventory.InventoryComponent.method_11(UInt32 uint_1, UInt32 uint_2, String string_0, Boolean bool_0) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Users\Inventory\InventoryComponent.cs:Zeile 299.
+   bei HabboIM.HabboHotel.Catalogs.Catalog.method_9(GameClient Session, Item Item, Int32 int_0, String string_0, Boolean bool_0, UInt32 uint_1) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Catalogs\Catalog.cs:Zeile 447.
+   bei HabboIM.HabboHotel.Catalogs.Catalog.method_6(GameClient Session, Int32 int_0, UInt32 uint_1, String string_0, Boolean bool_0, String string_1, String string_2, Boolean bool_1) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Catalogs\Catalog.cs:Zeile 374.
+   bei HabboIM.Communication.Messages.Catalog.PurchaseFromCatalogEvent.Handle(GameClient Session, ClientMessage Event) in C:\inetpub\habboim\AI EMU_CRACKED\Communication\Messages\Catalog\PurchaseFromCatalogEvent.cs:Zeile 44.
+   bei HabboIM.HabboHotel.GameClients.GameClient.ParsePacket(Byte[]& bytes) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\GameClients\GameClient.cs:Zeile 584.
+
+18.03.2020 13:06:34: Error: System.InvalidCastException: Die angegebene Umwandlung ist ung?ltig.
+   bei HabboIM.HabboHotel.Users.Inventory.InventoryComponent.ReloadItems() in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Users\Inventory\InventoryComponent.cs:Zeile 231.
+   bei HabboIM.HabboHotel.Users.Inventory.InventoryComponent.method_9(Boolean bool_0) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Users\Inventory\InventoryComponent.cs:Zeile 262.
+   bei HabboIM.Communication.Messages.Rooms.Engine.PickupObjectMessageEvent.Handle(GameClient Session, ClientMessage Event) in C:\inetpub\habboim\AI EMU_CRACKED\Communication\Messages\Rooms\Engine\PickupObjectMessageEvent.cs:Zeile 26.
+   bei HabboIM.HabboHotel.GameClients.GameClient.ParsePacket(Byte[]& bytes) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\GameClients\GameClient.cs:Zeile 584.
+
+18.03.2020 14:31:37: Error: MySql.Data.MySqlClient.MySqlException (0x80004005): Duplicate entry '1' for key 'PRIMARY'
+   bei MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   bei MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   bei MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   bei MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   bei MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   bei MySql.Data.MySqlClient.MySqlCommand.ExecuteScalar()
+   bei HabboIM.Storage.DatabaseClient.ExecuteQuery(String sQuery, Int32 timeout) in C:\inetpub\habboim\AI EMU_CRACKED\Storage\DatabaseClient.cs:Zeile 33.
+   bei HabboIM.HabboHotel.Users.Inventory.InventoryComponent.method_11(UInt32 uint_1, UInt32 uint_2, String string_0, Boolean bool_0) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Users\Inventory\InventoryComponent.cs:Zeile 299.
+   bei HabboIM.HabboHotel.Catalogs.Catalog.method_9(GameClient Session, Item Item, Int32 int_0, String string_0, Boolean bool_0, UInt32 uint_1) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Catalogs\Catalog.cs:Zeile 447.
+   bei HabboIM.HabboHotel.Catalogs.Catalog.method_6(GameClient Session, Int32 int_0, UInt32 uint_1, String string_0, Boolean bool_0, String string_1, String string_2, Boolean bool_1) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Catalogs\Catalog.cs:Zeile 374.
+   bei HabboIM.Communication.Messages.Catalog.PurchaseFromCatalogEvent.Handle(GameClient Session, ClientMessage Event) in C:\inetpub\habboim\AI EMU_CRACKED\Communication\Messages\Catalog\PurchaseFromCatalogEvent.cs:Zeile 44.
+   bei HabboIM.HabboHotel.GameClients.GameClient.ParsePacket(Byte[]& bytes) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\GameClients\GameClient.cs:Zeile 584.
+
+18.03.2020 14:45:30: Error: MySql.Data.MySqlClient.MySqlException (0x80004005): Duplicate entry '4' for key 'PRIMARY'
+   bei MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   bei MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   bei MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   bei MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   bei MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   bei MySql.Data.MySqlClient.MySqlCommand.ExecuteScalar()
+   bei HabboIM.Storage.DatabaseClient.ExecuteQuery(String sQuery, Int32 timeout) in C:\inetpub\habboim\AI EMU_CRACKED\Storage\DatabaseClient.cs:Zeile 33.
+   bei HabboIM.HabboHotel.Users.Inventory.InventoryComponent.method_11(UInt32 uint_1, UInt32 uint_2, String string_0, Boolean bool_0) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Users\Inventory\InventoryComponent.cs:Zeile 299.
+   bei HabboIM.HabboHotel.Catalogs.Catalog.method_9(GameClient Session, Item Item, Int32 int_0, String string_0, Boolean bool_0, UInt32 uint_1) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Catalogs\Catalog.cs:Zeile 447.
+   bei HabboIM.HabboHotel.Catalogs.Catalog.method_6(GameClient Session, Int32 int_0, UInt32 uint_1, String string_0, Boolean bool_0, String string_1, String string_2, Boolean bool_1) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Catalogs\Catalog.cs:Zeile 374.
+   bei HabboIM.Communication.Messages.Catalog.PurchaseFromCatalogEvent.Handle(GameClient Session, ClientMessage Event) in C:\inetpub\habboim\AI EMU_CRACKED\Communication\Messages\Catalog\PurchaseFromCatalogEvent.cs:Zeile 44.
+   bei HabboIM.HabboHotel.GameClients.GameClient.ParsePacket(Byte[]& bytes) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\GameClients\GameClient.cs:Zeile 584.
+
+18.03.2020 15:08:51: Error: MySql.Data.MySqlClient.MySqlException (0x80004005): Column count doesn't match value count at row 1
+   bei MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   bei MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   bei MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   bei MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   bei MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   bei MySql.Data.MySqlClient.MySqlCommand.ExecuteScalar()
+   bei HabboIM.Storage.DatabaseClient.ExecuteQuery(String sQuery, Int32 timeout) in C:\inetpub\habboim\AI EMU_CRACKED\Storage\DatabaseClient.cs:Zeile 33.
+   bei HabboIM.HabboHotel.Users.Inventory.InventoryComponent.method_11(UInt32 uint_1, UInt32 uint_2, String string_0, Boolean bool_0) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Users\Inventory\InventoryComponent.cs:Zeile 299.
+   bei HabboIM.HabboHotel.Catalogs.Catalog.method_9(GameClient Session, Item Item, Int32 int_0, String string_0, Boolean bool_0, UInt32 uint_1) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Catalogs\Catalog.cs:Zeile 447.
+   bei HabboIM.HabboHotel.Catalogs.Catalog.method_6(GameClient Session, Int32 int_0, UInt32 uint_1, String string_0, Boolean bool_0, String string_1, String string_2, Boolean bool_1) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Catalogs\Catalog.cs:Zeile 374.
+   bei HabboIM.Communication.Messages.Catalog.PurchaseFromCatalogEvent.Handle(GameClient Session, ClientMessage Event) in C:\inetpub\habboim\AI EMU_CRACKED\Communication\Messages\Catalog\PurchaseFromCatalogEvent.cs:Zeile 44.
+   bei HabboIM.HabboHotel.GameClients.GameClient.ParsePacket(Byte[]& bytes) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\GameClients\GameClient.cs:Zeile 584.
+
+18.03.2020 15:22:39: Error: MySql.Data.MySqlClient.MySqlException (0x80004005): Duplicate entry '7' for key 'PRIMARY'
+   bei MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   bei MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   bei MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   bei MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   bei MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   bei MySql.Data.MySqlClient.MySqlCommand.ExecuteScalar()
+   bei HabboIM.Storage.DatabaseClient.ExecuteQuery(String sQuery, Int32 timeout) in C:\inetpub\habboim\AI EMU_CRACKED\Storage\DatabaseClient.cs:Zeile 33.
+   bei HabboIM.HabboHotel.Users.Inventory.InventoryComponent.method_11(UInt32 uint_1, UInt32 uint_2, String string_0, Boolean bool_0) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Users\Inventory\InventoryComponent.cs:Zeile 299.
+   bei HabboIM.HabboHotel.Catalogs.Catalog.method_9(GameClient Session, Item Item, Int32 int_0, String string_0, Boolean bool_0, UInt32 uint_1) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Catalogs\Catalog.cs:Zeile 447.
+   bei HabboIM.HabboHotel.Catalogs.Catalog.method_6(GameClient Session, Int32 int_0, UInt32 uint_1, String string_0, Boolean bool_0, String string_1, String string_2, Boolean bool_1) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Catalogs\Catalog.cs:Zeile 374.
+   bei HabboIM.Communication.Messages.Catalog.PurchaseFromCatalogEvent.Handle(GameClient Session, ClientMessage Event) in C:\inetpub\habboim\AI EMU_CRACKED\Communication\Messages\Catalog\PurchaseFromCatalogEvent.cs:Zeile 44.
+   bei HabboIM.HabboHotel.GameClients.GameClient.ParsePacket(Byte[]& bytes) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\GameClients\GameClient.cs:Zeile 584.
+
+18.03.2020 15:25:12: Error: MySql.Data.MySqlClient.MySqlException (0x80004005): Duplicate entry '10' for key 'PRIMARY'
+   bei MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   bei MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   bei MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   bei MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   bei MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   bei MySql.Data.MySqlClient.MySqlCommand.ExecuteScalar()
+   bei HabboIM.Storage.DatabaseClient.ExecuteQuery(String sQuery, Int32 timeout) in C:\inetpub\habboim\AI EMU_CRACKED\Storage\DatabaseClient.cs:Zeile 33.
+   bei HabboIM.HabboHotel.Users.Inventory.InventoryComponent.method_11(UInt32 uint_1, UInt32 uint_2, String string_0, Boolean bool_0) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Users\Inventory\InventoryComponent.cs:Zeile 299.
+   bei HabboIM.HabboHotel.Catalogs.Catalog.method_9(GameClient Session, Item Item, Int32 int_0, String string_0, Boolean bool_0, UInt32 uint_1) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Catalogs\Catalog.cs:Zeile 447.
+   bei HabboIM.HabboHotel.Catalogs.Catalog.method_6(GameClient Session, Int32 int_0, UInt32 uint_1, String string_0, Boolean bool_0, String string_1, String string_2, Boolean bool_1) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Catalogs\Catalog.cs:Zeile 374.
+   bei HabboIM.Communication.Messages.Catalog.PurchaseFromCatalogEvent.Handle(GameClient Session, ClientMessage Event) in C:\inetpub\habboim\AI EMU_CRACKED\Communication\Messages\Catalog\PurchaseFromCatalogEvent.cs:Zeile 44.
+   bei HabboIM.HabboHotel.GameClients.GameClient.ParsePacket(Byte[]& bytes) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\GameClients\GameClient.cs:Zeile 584.
+
+18.03.2020 15:43:37: Error: MySql.Data.MySqlClient.MySqlException (0x80004005): Failed to read auto-increment value from storage engine
+   bei MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   bei MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   bei MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   bei MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   bei MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   bei MySql.Data.MySqlClient.MySqlCommand.ExecuteScalar()
+   bei HabboIM.Storage.DatabaseClient.ExecuteQuery(String sQuery, Int32 timeout) in C:\inetpub\habboim\AI EMU_CRACKED\Storage\DatabaseClient.cs:Zeile 33.
+   bei HabboIM.HabboHotel.Users.Inventory.InventoryComponent.method_11(UInt32 uint_1, UInt32 uint_2, String string_0, Boolean bool_0) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Users\Inventory\InventoryComponent.cs:Zeile 299.
+   bei HabboIM.HabboHotel.Catalogs.Catalog.method_9(GameClient Session, Item Item, Int32 int_0, String string_0, Boolean bool_0, UInt32 uint_1) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Catalogs\Catalog.cs:Zeile 447.
+   bei HabboIM.HabboHotel.Catalogs.Catalog.method_6(GameClient Session, Int32 int_0, UInt32 uint_1, String string_0, Boolean bool_0, String string_1, String string_2, Boolean bool_1) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Catalogs\Catalog.cs:Zeile 374.
+   bei HabboIM.Communication.Messages.Catalog.PurchaseFromCatalogEvent.Handle(GameClient Session, ClientMessage Event) in C:\inetpub\habboim\AI EMU_CRACKED\Communication\Messages\Catalog\PurchaseFromCatalogEvent.cs:Zeile 44.
+   bei HabboIM.HabboHotel.GameClients.GameClient.ParsePacket(Byte[]& bytes) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\GameClients\GameClient.cs:Zeile 584.
+
+18.03.2020 17:39:57: Unknown base: 54355
+
+18.03.2020 17:39:57: Error: System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei HabboIM.HabboHotel.Items.UserItem.method_0(ServerMessage Message, Boolean bool_0) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Items\UserItem.cs:Zeile 26.
+   bei HabboIM.HabboHotel.Users.Inventory.InventoryComponent.method_13() in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Users\Inventory\InventoryComponent.cs:Zeile 408.
+   bei HabboIM.Communication.Messages.Inventory.Furni.RequestFurniInventoryEvent.Handle(GameClient Session, ClientMessage Event) in C:\inetpub\habboim\AI EMU_CRACKED\Communication\Messages\Inventory\Furni\RequestFurniInventoryEvent.cs:Zeile 18.
+   bei HabboIM.HabboHotel.GameClients.GameClient.ParsePacket(Byte[]& bytes) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\GameClients\GameClient.cs:Zeile 584.
+
+20.03.2020 13:09:31: Error: MySql.Data.MySqlClient.MySqlException (0x80004005): Duplicate entry '999800115' for key 'PRIMARY'
+   bei MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   bei MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   bei MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   bei MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   bei MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   bei MySql.Data.MySqlClient.MySqlCommand.ExecuteScalar()
+   bei HabboIM.Storage.DatabaseClient.ExecuteQuery(String sQuery, Int32 timeout)
+   bei HabboIM.HabboHotel.Catalogs.Catalog.method_6(GameClient Session, Int32 int_0, UInt32 uint_1, String string_0, Boolean bool_0, String string_1, String string_2, Boolean bool_1)
+   bei HabboIM.Communication.Messages.Catalog.PurchaseFromCatalogAsGiftEvent.Handle(GameClient Session, ClientMessage Event)
+   bei HabboIM.HabboHotel.GameClients.GameClient.ParsePacket(Byte[]& bytes)
+
+20.03.2020 13:10:42: Error: MySql.Data.MySqlClient.MySqlException (0x80004005): Duplicate entry '999800116' for key 'PRIMARY'
+   bei MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   bei MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   bei MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   bei MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   bei MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   bei MySql.Data.MySqlClient.MySqlCommand.ExecuteScalar()
+   bei HabboIM.Storage.DatabaseClient.ExecuteQuery(String sQuery, Int32 timeout)
+   bei HabboIM.HabboHotel.Catalogs.Catalog.method_6(GameClient Session, Int32 int_0, UInt32 uint_1, String string_0, Boolean bool_0, String string_1, String string_2, Boolean bool_1)
+   bei HabboIM.Communication.Messages.Catalog.PurchaseFromCatalogAsGiftEvent.Handle(GameClient Session, ClientMessage Event)
+   bei HabboIM.HabboHotel.GameClients.GameClient.ParsePacket(Byte[]& bytes)
+
+20.03.2020 13:13:59: Error: MySql.Data.MySqlClient.MySqlException (0x80004005): Duplicate entry '999800117' for key 'PRIMARY'
+   bei MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   bei MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   bei MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   bei MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   bei MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   bei MySql.Data.MySqlClient.MySqlCommand.ExecuteScalar()
+   bei HabboIM.Storage.DatabaseClient.ExecuteQuery(String sQuery, Int32 timeout)
+   bei HabboIM.HabboHotel.Catalogs.Catalog.method_6(GameClient Session, Int32 int_0, UInt32 uint_1, String string_0, Boolean bool_0, String string_1, String string_2, Boolean bool_1)
+   bei HabboIM.Communication.Messages.Catalog.PurchaseFromCatalogAsGiftEvent.Handle(GameClient Session, ClientMessage Event)
+   bei HabboIM.HabboHotel.GameClients.GameClient.ParsePacket(Byte[]& bytes)
+
+20.03.2020 13:16:08: Error: MySql.Data.MySqlClient.MySqlException (0x80004005): Duplicate entry '999800119' for key 'PRIMARY'
+   bei MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   bei MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   bei MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   bei MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   bei MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   bei MySql.Data.MySqlClient.MySqlCommand.ExecuteScalar()
+   bei HabboIM.Storage.DatabaseClient.ExecuteQuery(String sQuery, Int32 timeout)
+   bei HabboIM.HabboHotel.Catalogs.Catalog.method_6(GameClient Session, Int32 int_0, UInt32 uint_1, String string_0, Boolean bool_0, String string_1, String string_2, Boolean bool_1)
+   bei HabboIM.Communication.Messages.Catalog.PurchaseFromCatalogAsGiftEvent.Handle(GameClient Session, ClientMessage Event)
+   bei HabboIM.HabboHotel.GameClients.GameClient.ParsePacket(Byte[]& bytes)
+
+20.03.2020 15:30:23: Error: MySql.Data.MySqlClient.MySqlException (0x80004005): Duplicate entry '1' for key 'PRIMARY'
+   bei MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   bei MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   bei MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   bei MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   bei MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   bei MySql.Data.MySqlClient.MySqlCommand.ExecuteScalar()
+   bei HabboIM.Storage.DatabaseClient.ExecuteQuery(String sQuery, Int32 timeout)
+   bei HabboIM.HabboHotel.Users.Inventory.InventoryComponent.method_11(UInt32 uint_1, UInt32 uint_2, String string_0, Boolean bool_0)
+   bei HabboIM.HabboHotel.Catalogs.Catalog.method_9(GameClient Session, Item Item, Int32 int_0, String string_0, Boolean bool_0, UInt32 uint_1)
+   bei HabboIM.HabboHotel.Catalogs.Catalog.method_6(GameClient Session, Int32 int_0, UInt32 uint_1, String string_0, Boolean bool_0, String string_1, String string_2, Boolean bool_1)
+   bei HabboIM.Communication.Messages.Catalog.PurchaseFromCatalogEvent.Handle(GameClient Session, ClientMessage Event)
+   bei HabboIM.HabboHotel.GameClients.GameClient.ParsePacket(Byte[]& bytes)
+
+20.03.2020 19:07:35: Error: MySql.Data.MySqlClient.MySqlException (0x80004005): Duplicate entry '999800042' for key 'PRIMARY'
+   bei MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   bei MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   bei MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   bei MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   bei MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   bei MySql.Data.MySqlClient.MySqlCommand.ExecuteScalar()
+   bei HabboIM.Storage.DatabaseClient.ExecuteQuery(String sQuery, Int32 timeout) in C:\inetpub\habboim\AI EMU_CRACKED\Storage\DatabaseClient.cs:Zeile 33.
+   bei HabboIM.HabboHotel.Users.Inventory.InventoryComponent.method_11(UInt32 uint_1, UInt32 uint_2, String string_0, Boolean bool_0) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Users\Inventory\InventoryComponent.cs:Zeile 299.
+   bei HabboIM.HabboHotel.Catalogs.Catalog.method_9(GameClient Session, Item Item, Int32 int_0, String string_0, Boolean bool_0, UInt32 uint_1) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Catalogs\Catalog.cs:Zeile 449.
+   bei HabboIM.HabboHotel.Catalogs.Catalog.method_6(GameClient Session, Int32 int_0, UInt32 uint_1, String string_0, Boolean bool_0, String string_1, String string_2, Boolean bool_1) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Catalogs\Catalog.cs:Zeile 376.
+   bei HabboIM.Communication.Messages.Catalog.PurchaseFromCatalogEvent.Handle(GameClient Session, ClientMessage Event) in C:\inetpub\habboim\AI EMU_CRACKED\Communication\Messages\Catalog\PurchaseFromCatalogEvent.cs:Zeile 44.
+   bei HabboIM.HabboHotel.GameClients.GameClient.ParsePacket(Byte[]& bytes) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\GameClients\GameClient.cs:Zeile 584.
+
+20.03.2020 19:08:46: Error: MySql.Data.MySqlClient.MySqlException (0x80004005): Duplicate entry '999800043' for key 'PRIMARY'
+   bei MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   bei MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   bei MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   bei MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   bei MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   bei MySql.Data.MySqlClient.MySqlCommand.ExecuteScalar()
+   bei HabboIM.Storage.DatabaseClient.ExecuteQuery(String sQuery, Int32 timeout) in C:\inetpub\habboim\AI EMU_CRACKED\Storage\DatabaseClient.cs:Zeile 33.
+   bei HabboIM.HabboHotel.Users.Inventory.InventoryComponent.method_11(UInt32 uint_1, UInt32 uint_2, String string_0, Boolean bool_0) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Users\Inventory\InventoryComponent.cs:Zeile 299.
+   bei HabboIM.HabboHotel.Catalogs.Catalog.method_9(GameClient Session, Item Item, Int32 int_0, String string_0, Boolean bool_0, UInt32 uint_1) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Catalogs\Catalog.cs:Zeile 449.
+   bei HabboIM.HabboHotel.Catalogs.Catalog.method_6(GameClient Session, Int32 int_0, UInt32 uint_1, String string_0, Boolean bool_0, String string_1, String string_2, Boolean bool_1) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Catalogs\Catalog.cs:Zeile 376.
+   bei HabboIM.Communication.Messages.Catalog.PurchaseFromCatalogEvent.Handle(GameClient Session, ClientMessage Event) in C:\inetpub\habboim\AI EMU_CRACKED\Communication\Messages\Catalog\PurchaseFromCatalogEvent.cs:Zeile 44.
+   bei HabboIM.HabboHotel.GameClients.GameClient.ParsePacket(Byte[]& bytes) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\GameClients\GameClient.cs:Zeile 584.
+
+20.03.2020 19:27:48: Error: MySql.Data.MySqlClient.MySqlException (0x80004005): Duplicate entry '999800069' for key 'PRIMARY'
+   bei MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   bei MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   bei MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   bei MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   bei MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   bei MySql.Data.MySqlClient.MySqlCommand.ExecuteScalar()
+   bei HabboIM.Storage.DatabaseClient.ExecuteQuery(String sQuery, Int32 timeout) in C:\inetpub\habboim\AI EMU_CRACKED\Storage\DatabaseClient.cs:Zeile 33.
+   bei HabboIM.HabboHotel.Users.Inventory.InventoryComponent.method_11(UInt32 uint_1, UInt32 uint_2, String string_0, Boolean bool_0) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Users\Inventory\InventoryComponent.cs:Zeile 299.
+   bei HabboIM.HabboHotel.Catalogs.Catalog.method_9(GameClient Session, Item Item, Int32 int_0, String string_0, Boolean bool_0, UInt32 uint_1) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Catalogs\Catalog.cs:Zeile 449.
+   bei HabboIM.HabboHotel.Catalogs.Catalog.method_6(GameClient Session, Int32 int_0, UInt32 uint_1, String string_0, Boolean bool_0, String string_1, String string_2, Boolean bool_1) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Catalogs\Catalog.cs:Zeile 376.
+   bei HabboIM.Communication.Messages.Catalog.PurchaseFromCatalogEvent.Handle(GameClient Session, ClientMessage Event) in C:\inetpub\habboim\AI EMU_CRACKED\Communication\Messages\Catalog\PurchaseFromCatalogEvent.cs:Zeile 44.
+   bei HabboIM.HabboHotel.GameClients.GameClient.ParsePacket(Byte[]& bytes) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\GameClients\GameClient.cs:Zeile 584.
+
+20.03.2020 20:43:36: Error: MySql.Data.MySqlClient.MySqlException (0x80004005): Duplicate entry '999800414' for key 'PRIMARY'
+   bei MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   bei MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   bei MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   bei MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   bei MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   bei MySql.Data.MySqlClient.MySqlCommand.ExecuteScalar()
+   bei HabboIM.Storage.DatabaseClient.ExecuteQuery(String sQuery, Int32 timeout) in C:\inetpub\habboim\AI EMU_CRACKED\Storage\DatabaseClient.cs:Zeile 33.
+   bei HabboIM.HabboHotel.Users.Inventory.InventoryComponent.method_11(UInt32 uint_1, UInt32 uint_2, String string_0, Boolean bool_0) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Users\Inventory\InventoryComponent.cs:Zeile 299.
+   bei HabboIM.HabboHotel.Catalogs.Catalog.method_9(GameClient Session, Item Item, Int32 int_0, String string_0, Boolean bool_0, UInt32 uint_1) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Catalogs\Catalog.cs:Zeile 449.
+   bei HabboIM.HabboHotel.Catalogs.Catalog.method_6(GameClient Session, Int32 int_0, UInt32 uint_1, String string_0, Boolean bool_0, String string_1, String string_2, Boolean bool_1) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Catalogs\Catalog.cs:Zeile 376.
+   bei HabboIM.Communication.Messages.Catalog.PurchaseFromCatalogEvent.Handle(GameClient Session, ClientMessage Event) in C:\inetpub\habboim\AI EMU_CRACKED\Communication\Messages\Catalog\PurchaseFromCatalogEvent.cs:Zeile 44.
+   bei HabboIM.HabboHotel.GameClients.GameClient.ParsePacket(Byte[]& bytes) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\GameClients\GameClient.cs:Zeile 584.
+
+20.03.2020 20:48:54: Error: MySql.Data.MySqlClient.MySqlException (0x80004005): Duplicate entry '999800416' for key 'PRIMARY'
+   bei MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   bei MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   bei MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   bei MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   bei MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   bei MySql.Data.MySqlClient.MySqlCommand.ExecuteScalar()
+   bei HabboIM.Storage.DatabaseClient.ExecuteQuery(String sQuery, Int32 timeout) in C:\inetpub\habboim\AI EMU_CRACKED\Storage\DatabaseClient.cs:Zeile 33.
+   bei HabboIM.HabboHotel.Users.Inventory.InventoryComponent.method_11(UInt32 uint_1, UInt32 uint_2, String string_0, Boolean bool_0) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Users\Inventory\InventoryComponent.cs:Zeile 299.
+   bei HabboIM.HabboHotel.Catalogs.Catalog.method_9(GameClient Session, Item Item, Int32 int_0, String string_0, Boolean bool_0, UInt32 uint_1) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Catalogs\Catalog.cs:Zeile 449.
+   bei HabboIM.HabboHotel.Catalogs.Catalog.method_6(GameClient Session, Int32 int_0, UInt32 uint_1, String string_0, Boolean bool_0, String string_1, String string_2, Boolean bool_1) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Catalogs\Catalog.cs:Zeile 376.
+   bei HabboIM.Communication.Messages.Catalog.PurchaseFromCatalogEvent.Handle(GameClient Session, ClientMessage Event) in C:\inetpub\habboim\AI EMU_CRACKED\Communication\Messages\Catalog\PurchaseFromCatalogEvent.cs:Zeile 44.
+   bei HabboIM.HabboHotel.GameClients.GameClient.ParsePacket(Byte[]& bytes) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\GameClients\GameClient.cs:Zeile 584.
+
+20.03.2020 20:55:32: Error: MySql.Data.MySqlClient.MySqlException (0x80004005): Duplicate entry '999800426' for key 'id'
+   bei MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   bei MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   bei MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   bei MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   bei MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   bei MySql.Data.MySqlClient.MySqlCommand.ExecuteScalar()
+   bei HabboIM.Storage.DatabaseClient.ExecuteQuery(String sQuery, Int32 timeout) in C:\inetpub\habboim\AI EMU_CRACKED\Storage\DatabaseClient.cs:Zeile 33.
+   bei HabboIM.HabboHotel.Users.Inventory.InventoryComponent.method_11(UInt32 uint_1, UInt32 uint_2, String string_0, Boolean bool_0) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Users\Inventory\InventoryComponent.cs:Zeile 299.
+   bei HabboIM.HabboHotel.Catalogs.Catalog.method_9(GameClient Session, Item Item, Int32 int_0, String string_0, Boolean bool_0, UInt32 uint_1) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Catalogs\Catalog.cs:Zeile 449.
+   bei HabboIM.HabboHotel.Catalogs.Catalog.method_6(GameClient Session, Int32 int_0, UInt32 uint_1, String string_0, Boolean bool_0, String string_1, String string_2, Boolean bool_1) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Catalogs\Catalog.cs:Zeile 376.
+   bei HabboIM.Communication.Messages.Catalog.PurchaseFromCatalogEvent.Handle(GameClient Session, ClientMessage Event) in C:\inetpub\habboim\AI EMU_CRACKED\Communication\Messages\Catalog\PurchaseFromCatalogEvent.cs:Zeile 44.
+   bei HabboIM.HabboHotel.GameClients.GameClient.ParsePacket(Byte[]& bytes) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\GameClients\GameClient.cs:Zeile 584.
+
+20.03.2020 21:00:57: Error: MySql.Data.MySqlClient.MySqlException (0x80004005): Duplicate entry '999800427' for key 'id'
+   bei MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   bei MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   bei MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   bei MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   bei MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   bei MySql.Data.MySqlClient.MySqlCommand.ExecuteScalar()
+   bei HabboIM.Storage.DatabaseClient.ExecuteQuery(String sQuery, Int32 timeout) in C:\inetpub\habboim\AI EMU_CRACKED\Storage\DatabaseClient.cs:Zeile 33.
+   bei HabboIM.HabboHotel.Users.Inventory.InventoryComponent.method_11(UInt32 uint_1, UInt32 uint_2, String string_0, Boolean bool_0) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Users\Inventory\InventoryComponent.cs:Zeile 299.
+   bei HabboIM.HabboHotel.Catalogs.Catalog.method_9(GameClient Session, Item Item, Int32 int_0, String string_0, Boolean bool_0, UInt32 uint_1) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Catalogs\Catalog.cs:Zeile 449.
+   bei HabboIM.HabboHotel.Catalogs.Catalog.method_6(GameClient Session, Int32 int_0, UInt32 uint_1, String string_0, Boolean bool_0, String string_1, String string_2, Boolean bool_1) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Catalogs\Catalog.cs:Zeile 376.
+   bei HabboIM.Communication.Messages.Catalog.PurchaseFromCatalogEvent.Handle(GameClient Session, ClientMessage Event) in C:\inetpub\habboim\AI EMU_CRACKED\Communication\Messages\Catalog\PurchaseFromCatalogEvent.cs:Zeile 44.
+   bei HabboIM.HabboHotel.GameClients.GameClient.ParsePacket(Byte[]& bytes) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\GameClients\GameClient.cs:Zeile 584.
+
+20.03.2020 22:24:14: Error: MySql.Data.MySqlClient.MySqlException (0x80004005): Duplicate entry '999800440' for key 'id'
+   bei MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   bei MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   bei MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   bei MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   bei MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   bei MySql.Data.MySqlClient.MySqlCommand.ExecuteScalar()
+   bei HabboIM.Storage.DatabaseClient.ExecuteQuery(String sQuery, Int32 timeout) in C:\inetpub\habboim\AI EMU_CRACKED\Storage\DatabaseClient.cs:Zeile 33.
+   bei HabboIM.HabboHotel.Catalogs.Catalog.method_6(GameClient Session, Int32 int_0, UInt32 uint_1, String string_0, Boolean bool_0, String string_1, String string_2, Boolean bool_1) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Catalogs\Catalog.cs:Zeile 354.
+   bei HabboIM.Communication.Messages.Catalog.PurchaseFromCatalogAsGiftEvent.Handle(GameClient Session, ClientMessage Event) in C:\inetpub\habboim\AI EMU_CRACKED\Communication\Messages\Catalog\PurchaseFromCatalogAsGiftEvent.cs:Zeile 16.
+   bei HabboIM.HabboHotel.GameClients.GameClient.ParsePacket(Byte[]& bytes) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\GameClients\GameClient.cs:Zeile 584.
+
+20.03.2020 22:25:51: Error: MySql.Data.MySqlClient.MySqlException (0x80004005): Duplicate entry '999800441' for key 'id'
+   bei MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   bei MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   bei MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   bei MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   bei MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   bei MySql.Data.MySqlClient.MySqlCommand.ExecuteScalar()
+   bei HabboIM.Storage.DatabaseClient.ExecuteQuery(String sQuery, Int32 timeout) in C:\inetpub\habboim\AI EMU_CRACKED\Storage\DatabaseClient.cs:Zeile 33.
+   bei HabboIM.HabboHotel.Users.Inventory.InventoryComponent.method_11(UInt32 uint_1, UInt32 uint_2, String string_0, Boolean bool_0) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Users\Inventory\InventoryComponent.cs:Zeile 299.
+   bei HabboIM.HabboHotel.Catalogs.Catalog.method_9(GameClient Session, Item Item, Int32 int_0, String string_0, Boolean bool_0, UInt32 uint_1) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Catalogs\Catalog.cs:Zeile 449.
+   bei HabboIM.HabboHotel.Catalogs.Catalog.method_6(GameClient Session, Int32 int_0, UInt32 uint_1, String string_0, Boolean bool_0, String string_1, String string_2, Boolean bool_1) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Catalogs\Catalog.cs:Zeile 376.
+   bei HabboIM.Communication.Messages.Catalog.PurchaseFromCatalogEvent.Handle(GameClient Session, ClientMessage Event) in C:\inetpub\habboim\AI EMU_CRACKED\Communication\Messages\Catalog\PurchaseFromCatalogEvent.cs:Zeile 44.
+   bei HabboIM.HabboHotel.GameClients.GameClient.ParsePacket(Byte[]& bytes) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\GameClients\GameClient.cs:Zeile 584.
+
+20.03.2020 22:26:55: Error: MySql.Data.MySqlClient.MySqlException (0x80004005): Duplicate entry '999800442' for key 'id'
+   bei MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   bei MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   bei MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   bei MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   bei MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   bei MySql.Data.MySqlClient.MySqlCommand.ExecuteScalar()
+   bei HabboIM.Storage.DatabaseClient.ExecuteQuery(String sQuery, Int32 timeout) in C:\inetpub\habboim\AI EMU_CRACKED\Storage\DatabaseClient.cs:Zeile 33.
+   bei HabboIM.HabboHotel.Users.Inventory.InventoryComponent.method_11(UInt32 uint_1, UInt32 uint_2, String string_0, Boolean bool_0) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Users\Inventory\InventoryComponent.cs:Zeile 299.
+   bei HabboIM.HabboHotel.Catalogs.Catalog.method_9(GameClient Session, Item Item, Int32 int_0, String string_0, Boolean bool_0, UInt32 uint_1) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Catalogs\Catalog.cs:Zeile 449.
+   bei HabboIM.HabboHotel.Catalogs.Catalog.method_6(GameClient Session, Int32 int_0, UInt32 uint_1, String string_0, Boolean bool_0, String string_1, String string_2, Boolean bool_1) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Catalogs\Catalog.cs:Zeile 376.
+   bei HabboIM.Communication.Messages.Catalog.PurchaseFromCatalogEvent.Handle(GameClient Session, ClientMessage Event) in C:\inetpub\habboim\AI EMU_CRACKED\Communication\Messages\Catalog\PurchaseFromCatalogEvent.cs:Zeile 44.
+   bei HabboIM.HabboHotel.GameClients.GameClient.ParsePacket(Byte[]& bytes) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\GameClients\GameClient.cs:Zeile 584.
+
+20.03.2020 22:28:27: Error: MySql.Data.MySqlClient.MySqlException (0x80004005): Duplicate entry '999800445' for key 'id'
+   bei MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   bei MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   bei MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   bei MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   bei MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   bei MySql.Data.MySqlClient.MySqlCommand.ExecuteScalar()
+   bei HabboIM.Storage.DatabaseClient.ExecuteQuery(String sQuery, Int32 timeout) in C:\inetpub\habboim\AI EMU_CRACKED\Storage\DatabaseClient.cs:Zeile 33.
+   bei HabboIM.HabboHotel.Users.Inventory.InventoryComponent.method_11(UInt32 uint_1, UInt32 uint_2, String string_0, Boolean bool_0) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Users\Inventory\InventoryComponent.cs:Zeile 299.
+   bei HabboIM.HabboHotel.Catalogs.Catalog.method_9(GameClient Session, Item Item, Int32 int_0, String string_0, Boolean bool_0, UInt32 uint_1) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Catalogs\Catalog.cs:Zeile 449.
+   bei HabboIM.HabboHotel.Catalogs.Catalog.method_6(GameClient Session, Int32 int_0, UInt32 uint_1, String string_0, Boolean bool_0, String string_1, String string_2, Boolean bool_1) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Catalogs\Catalog.cs:Zeile 376.
+   bei HabboIM.Communication.Messages.Catalog.PurchaseFromCatalogEvent.Handle(GameClient Session, ClientMessage Event) in C:\inetpub\habboim\AI EMU_CRACKED\Communication\Messages\Catalog\PurchaseFromCatalogEvent.cs:Zeile 44.
+   bei HabboIM.HabboHotel.GameClients.GameClient.ParsePacket(Byte[]& bytes) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\GameClients\GameClient.cs:Zeile 584.
+
+21.03.2020 02:10:07: Error: MySql.Data.MySqlClient.MySqlException (0x80004005): Duplicate entry '2' for key 'PRIMARY'
+   bei MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   bei MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   bei MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   bei MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   bei MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   bei MySql.Data.MySqlClient.MySqlCommand.ExecuteScalar()
+   bei HabboIM.Storage.DatabaseClient.ExecuteQuery(String sQuery, Int32 timeout) in C:\inetpub\habboim\AI EMU_CRACKED\Storage\DatabaseClient.cs:Zeile 33.
+   bei HabboIM.HabboHotel.Users.Inventory.InventoryComponent.method_11(UInt32 uint_1, UInt32 uint_2, String string_0, Boolean bool_0) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Users\Inventory\InventoryComponent.cs:Zeile 299.
+   bei HabboIM.HabboHotel.Catalogs.Catalog.method_9(GameClient Session, Item Item, Int32 int_0, String string_0, Boolean bool_0, UInt32 uint_1) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Catalogs\Catalog.cs:Zeile 449.
+   bei HabboIM.HabboHotel.Catalogs.Catalog.method_6(GameClient Session, Int32 int_0, UInt32 uint_1, String string_0, Boolean bool_0, String string_1, String string_2, Boolean bool_1) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Catalogs\Catalog.cs:Zeile 376.
+   bei HabboIM.Communication.Messages.Catalog.PurchaseFromCatalogEvent.Handle(GameClient Session, ClientMessage Event) in C:\inetpub\habboim\AI EMU_CRACKED\Communication\Messages\Catalog\PurchaseFromCatalogEvent.cs:Zeile 44.
+   bei HabboIM.HabboHotel.GameClients.GameClient.ParsePacket(Byte[]& bytes) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\GameClients\GameClient.cs:Zeile 584.
+
+21.03.2020 02:44:42: Error: MySql.Data.MySqlClient.MySqlException (0x80004005): Duplicate entry '3' for key 'PRIMARY'
+   bei MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   bei MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   bei MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   bei MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   bei MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   bei MySql.Data.MySqlClient.MySqlCommand.ExecuteScalar()
+   bei HabboIM.Storage.DatabaseClient.ExecuteQuery(String sQuery, Int32 timeout) in C:\inetpub\habboim\AI EMU_CRACKED\Storage\DatabaseClient.cs:Zeile 33.
+   bei HabboIM.HabboHotel.Users.Inventory.InventoryComponent.method_11(UInt32 uint_1, UInt32 uint_2, String string_0, Boolean bool_0) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Users\Inventory\InventoryComponent.cs:Zeile 299.
+   bei HabboIM.HabboHotel.Catalogs.Catalog.method_9(GameClient Session, Item Item, Int32 int_0, String string_0, Boolean bool_0, UInt32 uint_1) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Catalogs\Catalog.cs:Zeile 449.
+   bei HabboIM.HabboHotel.Catalogs.Catalog.method_6(GameClient Session, Int32 int_0, UInt32 uint_1, String string_0, Boolean bool_0, String string_1, String string_2, Boolean bool_1) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Catalogs\Catalog.cs:Zeile 376.
+   bei HabboIM.Communication.Messages.Catalog.PurchaseFromCatalogEvent.Handle(GameClient Session, ClientMessage Event) in C:\inetpub\habboim\AI EMU_CRACKED\Communication\Messages\Catalog\PurchaseFromCatalogEvent.cs:Zeile 44.
+   bei HabboIM.HabboHotel.GameClients.GameClient.ParsePacket(Byte[]& bytes) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\GameClients\GameClient.cs:Zeile 584.
+
+21.03.2020 02:47:21: Error: MySql.Data.MySqlClient.MySqlException (0x80004005): Duplicate entry '4' for key 'id'
+   bei MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   bei MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   bei MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   bei MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   bei MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   bei MySql.Data.MySqlClient.MySqlCommand.ExecuteScalar()
+   bei HabboIM.Storage.DatabaseClient.ExecuteQuery(String sQuery, Int32 timeout) in C:\inetpub\habboim\AI EMU_CRACKED\Storage\DatabaseClient.cs:Zeile 33.
+   bei HabboIM.HabboHotel.Users.Inventory.InventoryComponent.method_11(UInt32 uint_1, UInt32 uint_2, String string_0, Boolean bool_0) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Users\Inventory\InventoryComponent.cs:Zeile 299.
+   bei HabboIM.HabboHotel.Catalogs.Catalog.method_9(GameClient Session, Item Item, Int32 int_0, String string_0, Boolean bool_0, UInt32 uint_1) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Catalogs\Catalog.cs:Zeile 449.
+   bei HabboIM.HabboHotel.Catalogs.Catalog.method_6(GameClient Session, Int32 int_0, UInt32 uint_1, String string_0, Boolean bool_0, String string_1, String string_2, Boolean bool_1) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Catalogs\Catalog.cs:Zeile 376.
+   bei HabboIM.Communication.Messages.Catalog.PurchaseFromCatalogEvent.Handle(GameClient Session, ClientMessage Event) in C:\inetpub\habboim\AI EMU_CRACKED\Communication\Messages\Catalog\PurchaseFromCatalogEvent.cs:Zeile 44.
+   bei HabboIM.HabboHotel.GameClients.GameClient.ParsePacket(Byte[]& bytes) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\GameClients\GameClient.cs:Zeile 584.
+
+21.03.2020 12:23:50: Error: MySql.Data.MySqlClient.MySqlException (0x80004005): Duplicate entry '18' for key 'id'
+   bei MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   bei MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   bei MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   bei MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   bei MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   bei MySql.Data.MySqlClient.MySqlCommand.ExecuteScalar()
+   bei HabboIM.Storage.DatabaseClient.ExecuteQuery(String sQuery, Int32 timeout) in C:\inetpub\habboim\AI EMU_CRACKED\Storage\DatabaseClient.cs:Zeile 33.
+   bei HabboIM.HabboHotel.Users.Inventory.InventoryComponent.method_11(UInt32 uint_1, UInt32 uint_2, String string_0, Boolean bool_0) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Users\Inventory\InventoryComponent.cs:Zeile 299.
+   bei HabboIM.HabboHotel.Catalogs.Catalog.method_9(GameClient Session, Item Item, Int32 int_0, String string_0, Boolean bool_0, UInt32 uint_1) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Catalogs\Catalog.cs:Zeile 449.
+   bei HabboIM.HabboHotel.Catalogs.Catalog.method_6(GameClient Session, Int32 int_0, UInt32 uint_1, String string_0, Boolean bool_0, String string_1, String string_2, Boolean bool_1) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\Catalogs\Catalog.cs:Zeile 376.
+   bei HabboIM.Communication.Messages.Catalog.PurchaseFromCatalogEvent.Handle(GameClient Session, ClientMessage Event) in C:\inetpub\habboim\AI EMU_CRACKED\Communication\Messages\Catalog\PurchaseFromCatalogEvent.cs:Zeile 44.
+   bei HabboIM.HabboHotel.GameClients.GameClient.ParsePacket(Byte[]& bytes) in C:\inetpub\habboim\AI EMU_CRACKED\HabboHotel\GameClients\GameClient.cs:Zeile 584.
+

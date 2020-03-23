@@ -1,0 +1,35 @@
+
+
+
+ // DB
+:casino
+:fly // DB
+
+
+
+
+//Roleplay
+:sneeze - Niesen
+:ehe - Heiraten
+:kill - Töten
+:love - Lieben
+:zkiss - Zungenkuss
+:umarm
+:box
+
+//Commands
+:wil
+:developer - DEV Infos
+:cheat [USERNAME] - Kleine Userinfo
+:eventuhr - Countdown ( 5sek )
+:unban
+:shisha
+:regen
+
+:eventstart - Startet ein Event im jetzigem raum
+:eventstop - Stoppt das Event
+:eventport - Teleportiert dich zum Event
+:faceless
+:whisperha
+:whispersa
+:duty

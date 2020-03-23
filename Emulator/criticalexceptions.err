@@ -1,0 +1,45 @@
+24.03.2017 19:20:54: System.ArgumentNullException: Der Wert darf nicht NULL sein.
+Parametername: source
+   bei System.Linq.Enumerable.Where[TSource](IEnumerable`1 source, Func`2 predicate)
+   bei GoldTree.HabboHotel.Rooms.Room.ShowResults(Room Room, Int32 QuestionId, GameClient Session) in C:\Users\Hazed\Desktop\Unicorn Smiley\Unicorn Habbo.ai Edition\HabboHotel\Rooms\Room.cs:Zeile 4482.
+   bei GoldTree.Net.MusHandler.<>c__DisplayClass5_0.<ParsePacket>b__0() in C:\Users\Hazed\Desktop\Unicorn Smiley\Unicorn Habbo.ai Edition\Net\MusHandler.cs:Zeile 534.
+   bei System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   bei System.Threading.ThreadHelper.ThreadStart()
+
+24.03.2017 21:18:23: System.ArgumentNullException: Der Wert darf nicht NULL sein.
+Parametername: source
+   bei System.Linq.Enumerable.Where[TSource](IEnumerable`1 source, Func`2 predicate)
+   bei GoldTree.HabboHotel.Rooms.Room.ShowResults(Room Room, Int32 QuestionId, GameClient Session) in C:\Users\Hazed\Desktop\Unicorn Smiley\Unicorn Habbo.ai Edition\HabboHotel\Rooms\Room.cs:Zeile 4482.
+   bei GoldTree.Net.MusHandler.<>c__DisplayClass5_0.<ParsePacket>b__0() in C:\Users\Hazed\Desktop\Unicorn Smiley\Unicorn Habbo.ai Edition\Net\MusHandler.cs:Zeile 534.
+   bei System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   bei System.Threading.ThreadHelper.ThreadStart()
+
+02.01.2020 22:05:42: Der Spieler jR- hat den Emulator runtergefahren. 02.01.2020 22:05:42
+
+08.01.2020 04:50:00: Der Spieler Retronym hat den Emulator runtergefahren. 08.01.2020 04:50:00
+
+08.01.2020 05:02:08: Der Spieler Retronym hat den Emulator runtergefahren. 08.01.2020 05:02:08
+
+08.01.2020 23:12:39: Der Spieler Retronym hat den Emulator runtergefahren. 08.01.2020 23:12:39
+
+09.01.2020 03:07:44: Der Spieler Retronym hat den Emulator runtergefahren. 09.01.2020 03:07:44
+
+09.01.2020 18:20:25: Der Spieler Retronym hat den Emulator runtergefahren. 09.01.2020 18:20:25
+
+12.01.2020 02:22:24: Der Spieler Retronym hat den Emulator runtergefahren. 12.01.2020 02:22:24
+
+12.01.2020 22:11:57: Der Spieler Retronym hat den Emulator runtergefahren. 12.01.2020 22:11:57
+
+13.01.2020 13:25:59: Der Spieler Retronym hat den Emulator runtergefahren. 13.01.2020 13:25:59
+
+13.01.2020 23:23:35: Der Spieler Retronym hat den Emulator runtergefahren. 13.01.2020 23:23:35
+
+13.01.2020 23:46:44: Der Spieler Retronym hat den Emulator runtergefahren. 13.01.2020 23:46:44
+
+22.01.2020 17:36:13: Error during removing user from room [Part: 4]: System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei GoldTree.HabboHotel.Rooms.Room.method_47(GameClient Session, Boolean bool_13, Boolean bool_14) in C:\Users\Administrator\Desktop\AI EMU_CRACKED\HabboHotel\Rooms\Room.cs:Zeile 4575.
+
