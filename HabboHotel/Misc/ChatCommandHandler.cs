@@ -30,7 +30,7 @@ namespace HabboIM.HabboHotel.Misc
         public static void smethod_0(DatabaseClient class6_0)
         {
             Console.BackgroundColor = ConsoleColor.Black;
-            Logging.Write("Lädt Chat Filter..");
+            Logging.Write("LÃ¤dt Chat Filter..");
             ChatCommandHandler.list_0 = new List<string>();
             ChatCommandHandler.list_1 = new List<string>();
             ChatCommandHandler.list_2 = new List<int>();
@@ -569,7 +569,7 @@ namespace HabboIM.HabboHotel.Misc
                                                     wort,
                                                     ") im Raum \"",
                                                     Session.GetHabbo().CurrentRoom.Name,
-                                                    "\" vom System für 15 Minuten gebannt!\rChatlog: "+ string_0
+                                                    "\" vom System fÃ¼r 15 Minuten gebannt!\rChatlog: "+ string_0
                                             }));
 
                                             HabboIM.GetGame().GetClientManager().method_16(Logging, Logging);
@@ -588,7 +588,7 @@ namespace HabboIM.HabboHotel.Misc
                                             Session.GetHabbo().UpdateJail(true);
 
                                             ServerMessage Message = new ServerMessage(35u);
-                                            Message.AppendStringWithBreak("Aufgrund deiner Ausdrucksweise wurdest du vom Server-System zu einer 15 Minütigen Auszeit verdonnert!", 13);
+                                            Message.AppendStringWithBreak("Aufgrund deiner Ausdrucksweise wurdest du vom Server-System zu einer 15 MinÃ¼tigen Auszeit verdonnert!", 13);
                                             Session.SendMessage(Message);
 
 
@@ -719,7 +719,7 @@ namespace HabboIM.HabboHotel.Misc
             {
 
                 Session.GetHabbo().CurrentRoom.method_47(Session, true, false);
-                Session.SendNotification("Du hast innerhalb von 5 Sekunden zuviele Befehle ausgeführt!\r\rBitte benutze unsere Commands etwas langsamer.");
+                Session.SendNotification("Du hast innerhalb von 5 Sekunden zuviele Befehle ausgefÃ¼hrt!\r\rBitte benutze unsere Commands etwas langsamer.");
                 return true;
             }
             Session.GetHabbo().kicktime = DateTime.Now;
@@ -749,7 +749,7 @@ namespace HabboIM.HabboHotel.Misc
 
             if (Session.GetHabbo().jail == 1)
             {
-                Session.GetHabbo().Whisper("Du bist gebannt und kannst keine Commands ausführen!");
+                Session.GetHabbo().Whisper("Du bist gebannt und kannst keine Commands ausfÃ¼hren!");
                 return true;
             }
 
@@ -893,7 +893,7 @@ namespace HabboIM.HabboHotel.Misc
 
                             if (Session.GetHabbo().AchievementScore < 100)
                             {
-                                Session.GetHabbo().Whisper("Du benötigst 100 Erfahrungspunkte um am Lotto teilnehmen zu können!");
+                                Session.GetHabbo().Whisper("Du benÃ¶tigst 100 Erfahrungspunkte um am Lotto teilnehmen zu kÃ¶nnen!");
                                 return true;
                             }
                             else
@@ -909,7 +909,7 @@ namespace HabboIM.HabboHotel.Misc
 
                                 if(Session.GetHabbo().Credits < 2500)
                                 {
-                                    Session.GetHabbo().Whisper("Du hast nicht genügend Taler, um deine Zahlen einsenden zu können!");
+                                    Session.GetHabbo().Whisper("Du hast nicht genÃ¼gend Taler, um deine Zahlen einsenden zu kÃ¶nnen!");
                                     return true;
                                 
                                 }
@@ -947,7 +947,7 @@ namespace HabboIM.HabboHotel.Misc
                                 if (Session.GetHabbo().Rank < 6)
                                 {
 
-                                    Session.GetHabbo().Whisper("Du scheinst nicht die nötigen Rechte zu besitzen...");
+                                    Session.GetHabbo().Whisper("Du scheinst nicht die nÃ¶tigen Rechte zu besitzen...");
                                     return true;
                                 }
 
@@ -962,7 +962,7 @@ namespace HabboIM.HabboHotel.Misc
                                     }
                                     if (TargetClient.GetHabbo().Rank >= Session.GetHabbo().Rank)
                                     {
-                                        Session.GetHabbo().Whisper("Der Spieler " + Params[1] + " hat einen höheren Rang als du, weshalb das Jailen dieses Spielers nicht möglich ist!");
+                                        Session.GetHabbo().Whisper("Der Spieler " + Params[1] + " hat einen hÃ¶heren Rang als du, weshalb das Jailen dieses Spielers nicht mÃ¶glich ist!");
                                         return true;
 
                                     }
@@ -992,7 +992,7 @@ namespace HabboIM.HabboHotel.Misc
                                     if (ChatCommandHandler.MergeParams(Params, 3) != null)
                                     {
 
-                                        TargetClient.SendNotification("Du wurdest aufgrund eines Regelverstoßes inhaftiert!\r\rDeine Haftstrafe endet in " + newtime + " Minuten.\r\rSolltest du dich ausloggen, wird die Zeit gestoppt und erst dann wieder fortgesetzt, wenn du dich einloggst.");
+                                        TargetClient.SendNotification("Du wurdest aufgrund eines RegelverstoÃŸes inhaftiert!\r\rDeine Haftstrafe endet in " + newtime + " Minuten.\r\rSolltest du dich ausloggen, wird die Zeit gestoppt und erst dann wieder fortgesetzt, wenn du dich einloggst.");
 
                                         ServerMessage Logging = new ServerMessage(134u);
                                         Logging.AppendUInt(0u);
@@ -1000,7 +1000,7 @@ namespace HabboIM.HabboHotel.Misc
 
                                         Logging.AppendString(string.Concat(new string[]
                                         {
-                                                  "Frank: "+ Session.GetHabbo().Username +" hat "+ TargetClient.GetHabbo().Username+" für "+ newtime+" Minuten inhaftiert!"
+                                                  "Frank: "+ Session.GetHabbo().Username +" hat "+ TargetClient.GetHabbo().Username+" fÃ¼r "+ newtime+" Minuten inhaftiert!"
 
                                         }));
 
@@ -1021,7 +1021,7 @@ namespace HabboIM.HabboHotel.Misc
 
                                         Logging.AppendString(string.Concat(new string[]
                                         {
-                                                  "System: "+ Session.GetHabbo().Username +" hat "+ TargetClient.GetHabbo().Username+ " für "+ newtime+" Minuten inhaftiert."
+                                                  "System: "+ Session.GetHabbo().Username +" hat "+ TargetClient.GetHabbo().Username+ " fÃ¼r "+ newtime+" Minuten inhaftiert."
 
                                         }));
 
@@ -1040,7 +1040,7 @@ namespace HabboIM.HabboHotel.Misc
                                 if (Session.GetHabbo().Rank < 6)
                                 {
 
-                                    Session.GetHabbo().Whisper("Du scheinst nicht die nötigen Rechte zu besitzen...");
+                                    Session.GetHabbo().Whisper("Du scheinst nicht die nÃ¶tigen Rechte zu besitzen...");
                                     return true;
                                 }
 
@@ -1056,7 +1056,7 @@ namespace HabboIM.HabboHotel.Misc
                                     if (TargetClient.GetHabbo().jail == 0 || TargetClient.GetHabbo().jailtime < 1)
                                     {
 
-                                        Session.GetHabbo().Whisper("" + Params[1] + " sitzt derzeit nicht im Gefängnis!");
+                                        Session.GetHabbo().Whisper("" + Params[1] + " sitzt derzeit nicht im GefÃ¤ngnis!");
                                         return true;
                                     }
 
@@ -1068,7 +1068,7 @@ namespace HabboIM.HabboHotel.Misc
 
                                     Session.GetHabbo().Whisper("Der User " + TargetClient.GetHabbo().Username + " wurde erfolgreich aus der MyHuBBa Haftanstalt entlassen!");
 
-                                    TargetClient.SendNotification("Frank, der MyHabbo Gefängniswärter hat dich frühzeitig aus der Haftanstalt entlassen. Grund: Gute Führung!");
+                                    TargetClient.SendNotification("Frank, der MyHabbo GefÃ¤ngniswÃ¤rter hat dich frÃ¼hzeitig aus der Haftanstalt entlassen. Grund: Gute FÃ¼hrung!");
 
                                     return true;
                                 }
@@ -1095,7 +1095,7 @@ namespace HabboIM.HabboHotel.Misc
 
                                 if (TargetClient.GetHabbo().Rank >= Session.GetHabbo().Rank)
                                 {
-                                    Session.GetHabbo().Whisper("Du besitzt nicht die nötigen Rechte.");
+                                    Session.GetHabbo().Whisper("Du besitzt nicht die nÃ¶tigen Rechte.");
                                     HabboIM.GetGame().GetClientManager().method_31(Session, Params[0].ToLower(), Input);
                                     result = true;
                                     return result;
@@ -1154,7 +1154,7 @@ namespace HabboIM.HabboHotel.Misc
                                 }
                                 if (banLength < 600)
                                 {
-                                    Session.SendNotification("Wenn du einen Spieler temporär sperren möchtest, musst du die Zeit in Sekunden angeben. Das Minimum hierbei beträgt 600 (10 Minuten).");
+                                    Session.SendNotification("Wenn du einen Spieler temporÃ¤r sperren mÃ¶chtest, musst du die Zeit in Sekunden angeben. Das Minimum hierbei betrÃ¤gt 600 (10 Minuten).");
                                     HabboIM.GetGame().GetClientManager().method_31(Session, Params[0].ToLower(), Input);
                                     result = true;
                                     return result;
@@ -1202,21 +1202,21 @@ namespace HabboIM.HabboHotel.Misc
                                 if (room.Owner != Session.GetHabbo().Username && !Session.GetHabbo().HasFuse("acc_anyroomowner"))
                                 {
 
-                                    Session.GetHabbo().Whisper("Dieser Befehl kann nur vom Raumbesitzer ausgeführt werden!");
+                                    Session.GetHabbo().Whisper("Dieser Befehl kann nur vom Raumbesitzer ausgefÃ¼hrt werden!");
                                     return true;
                                 }
                                 var TargetClient1 = HabboIM.GetGame().GetClientManager().GetClientByHabbo(Params[2]);
                                 TargetClient = HabboIM.GetGame().GetClientManager().GetClientByHabbo(Params[1]);
                                 if (TargetClient == null || TargetClient1 == null)
                                 {
-                                    Session.GetHabbo().Whisper("Die User müssen online sein!");
+                                    Session.GetHabbo().Whisper("Die User mÃ¼ssen online sein!");
                                     return true;
                                 }
 
                                 TargetClient = HabboIM.GetGame().GetClientManager().GetClientByHabbo(Params[1]);
                                 if (TargetClient.GetHabbo().CurrentRoomId != Session.GetHabbo().CurrentRoomId || TargetClient1.GetHabbo().CurrentRoomId != Session.GetHabbo().CurrentRoomId)
                                 {
-                                    Session.GetHabbo().Whisper("Die User müssen in diesem Raum sein!");
+                                    Session.GetHabbo().Whisper("Die User mÃ¼ssen in diesem Raum sein!");
                                     return true;
                                 }
                                 var class23 = HabboIM.GetGame().GetRoomManager().GetRoom(TargetClient.GetHabbo().CurrentRoomId);
@@ -1276,7 +1276,7 @@ namespace HabboIM.HabboHotel.Misc
                                 Room room = Session.GetHabbo().CurrentRoom; // Current Room
                                 if (room.Owner != Session.GetHabbo().Username && !Session.GetHabbo().HasFuse("acc_anyroomowner"))
                                 {
-                                    Session.GetHabbo().Whisper("Dieser Befehl kann nur vom Raumbesitzer ausgeführt werden!");
+                                    Session.GetHabbo().Whisper("Dieser Befehl kann nur vom Raumbesitzer ausgefÃ¼hrt werden!");
                                     return true;
                                 }
 
@@ -1352,7 +1352,7 @@ namespace HabboIM.HabboHotel.Misc
 
                                 if (class8.Rank >= Session.GetHabbo().Rank)
                                 {
-                                    Session.SendNotification("Du besitzt nicht die nötigen Rechte.");
+                                    Session.SendNotification("Du besitzt nicht die nÃ¶tigen Rechte.");
 
                                     HabboIM.GetGame().GetClientManager().method_31(Session, Params[0].ToLower(), Input);
                                     result = true;
@@ -1374,7 +1374,7 @@ namespace HabboIM.HabboHotel.Misc
                                         TargetClient.GetHabbo().UpdateJail(true);
 
                                         ServerMessage Message = new ServerMessage(35u);
-                                        Message.AppendStringWithBreak("Du wurdest aufgrund eines Regelverstoßes dauerhaft aus dem Hotel gebannt!\r\r", 13);
+                                        Message.AppendStringWithBreak("Du wurdest aufgrund eines RegelverstoÃŸes dauerhaft aus dem Hotel gebannt!\r\r", 13);
                                         Message.AppendStringWithBreak("Grund: Dauerhafte Accountsperrung");
                                         TargetClient.SendMessage(Message);
                                         ServerMessage Logging = new ServerMessage(134u);
@@ -1414,7 +1414,7 @@ namespace HabboIM.HabboHotel.Misc
                                         TargetClient.GetHabbo().UpdateJail(true);
 
                                         ServerMessage Message = new ServerMessage(35u);
-                                        Message.AppendStringWithBreak("Du wurdest dauerhaft aus dem Hotel gebannt!\r\rBegründung: Dauerban", 13);
+                                        Message.AppendStringWithBreak("Du wurdest dauerhaft aus dem Hotel gebannt!\r\rBegrÃ¼ndung: Dauerban", 13);
 
                                         Session.SendMessage(Message);
 
@@ -1569,7 +1569,7 @@ namespace HabboIM.HabboHotel.Misc
                                 }
                                 if (TargetClient.GetHabbo().Rank >= Session.GetHabbo().Rank)
                                 {
-                                    Session.GetHabbo().Whisper("Du besitzt nicht die nötigen Rechte.");
+                                    Session.GetHabbo().Whisper("Du besitzt nicht die nÃ¶tigen Rechte.");
                                     HabboIM.GetGame().GetClientManager().method_31(Session, Params[0].ToLower(), Input);
                                     result = true;
                                     return result;
@@ -1628,7 +1628,7 @@ namespace HabboIM.HabboHotel.Misc
                                 }
                                 if (banLength < 600)
                                 {
-                                    Session.SendNotification("Wenn du einen Spieler temporär sperren möchtest, musst du die Zeit in Sekunden angeben. Das Minimum hierbei beträgt 600 (10 Minuten).");
+                                    Session.SendNotification("Wenn du einen Spieler temporÃ¤r sperren mÃ¶chtest, musst du die Zeit in Sekunden angeben. Das Minimum hierbei betrÃ¤gt 600 (10 Minuten).");
                                     HabboIM.GetGame().GetClientManager().method_31(Session, Params[0].ToLower(), Input);
                                     result = true;
                                     return result;
@@ -1688,12 +1688,12 @@ namespace HabboIM.HabboHotel.Misc
                                     }
                                     else
                                     {
-                                        Session.SendNotification("Taler dürfen nur maximal 1.000.00 gegeben bzw. abgezogen werden!");
+                                        Session.SendNotification("Taler dÃ¼rfen nur maximal 1.000.00 gegeben bzw. abgezogen werden!");
                                     }
                                     result = true;
                                     return result;
                                 }
-                                Session.SendNotification("Benutze bitte eine gültige Anzahl an Talern.");
+                                Session.SendNotification("Benutze bitte eine gÃ¼ltige Anzahl an Talern.");
                                 HabboIM.GetGame().GetClientManager().method_31(Session, Params[0].ToLower(), Input);
                                 result = true;
                                 return result;
@@ -1744,7 +1744,7 @@ namespace HabboIM.HabboHotel.Misc
                                 int effectid = (int)Convert.ToInt16(Params[1]);
                                 if (effectid == 10200000/* || effectid == 178 || effectid == 650 || effectid == 653 || effectid == 997 || effectid == 998 || effectid == 999 || effectid == 620 || (effectid >= 500 && effectid <= 530)*/)
                                 {
-                                    Session.GetHabbo().Whisper("Dieser Effekt wurde für normale User gesperrt!");
+                                    Session.GetHabbo().Whisper("Dieser Effekt wurde fÃ¼r normale User gesperrt!");
                                     result = true;
                                     return result;
                                 }
@@ -1894,7 +1894,7 @@ namespace HabboIM.HabboHotel.Misc
                             if (Session.GetHabbo().HasFuse("cmd_invisible"))
                             {
                                 Session.GetHabbo().IsVisible = !Session.GetHabbo().IsVisible;
-                                Session.SendNotification("Du bist nun " + (Session.GetHabbo().IsVisible ? "sichtbar" : "unsichtbar") + "\nLade den Raum neu um deine Änderung wirksam zu machen ;D");
+                                Session.SendNotification("Du bist nun " + (Session.GetHabbo().IsVisible ? "sichtbar" : "unsichtbar") + "\nLade den Raum neu um deine Ã„nderung wirksam zu machen ;D");
                                 result = true;
                                 return result;
                             }
@@ -1916,7 +1916,7 @@ namespace HabboIM.HabboHotel.Misc
                             }
                             if (TargetClient.GetHabbo().Rank >= Session.GetHabbo().Rank)
                             {
-                                Session.GetHabbo().Whisper("Du besitzt nicht die nötigen Rechte.");
+                                Session.GetHabbo().Whisper("Du besitzt nicht die nÃ¶tigen Rechte.");
                                 HabboIM.GetGame().GetClientManager().method_31(Session, Params[0].ToLower(), Input);
                                 result = true;
                                 return result;
@@ -1949,7 +1949,7 @@ namespace HabboIM.HabboHotel.Misc
                                 }
                                 if (Session.GetHabbo().Rank <= TargetClient.GetHabbo().Rank)
                                 {
-                                    Session.SendNotification("Du besitzt nicht die nötigen Rechte.");
+                                    Session.SendNotification("Du besitzt nicht die nÃ¶tigen Rechte.");
                                     result = true;
                                     return result;
                                 }
@@ -2082,7 +2082,7 @@ namespace HabboIM.HabboHotel.Misc
                                 }
                                 if (TargetClient.GetHabbo().Rank >= Session.GetHabbo().Rank)
                                 {
-                                    Session.GetHabbo().Whisper("Du besitzt nicht die nötigen Rechte.");
+                                    Session.GetHabbo().Whisper("Du besitzt nicht die nÃ¶tigen Rechte.");
                                     HabboIM.GetGame().GetClientManager().method_31(Session, Params[0].ToLower(), Input);
                                     result = true;
                                     return result;
@@ -2166,7 +2166,7 @@ namespace HabboIM.HabboHotel.Misc
                                     result = true;
                                     return result;
                                 }
-                                Session.SendNotification("Gebe eine gültige Anzahl an Enten ein.");
+                                Session.SendNotification("Gebe eine gÃ¼ltige Anzahl an Enten ein.");
                                 HabboIM.GetGame().GetClientManager().method_31(Session, Params[0].ToLower(), Input);
                                 result = true;
                                 return result;
@@ -2553,7 +2553,7 @@ namespace HabboIM.HabboHotel.Misc
                                 {
 
 
-                                    Session.GetHabbo().Whisper("Du erhältst bereits globale Benachrichtigungen.");
+                                    Session.GetHabbo().Whisper("Du erhÃ¤ltst bereits globale Benachrichtigungen.");
                                     return true;
 
                                 }
@@ -2562,7 +2562,7 @@ namespace HabboIM.HabboHotel.Misc
                                 Session.GetHabbo().gchat = 1;
 
 
-                                Session.GetHabbo().Whisper("Du erhältst nun wieder globale Benachrichtigungen.");
+                                Session.GetHabbo().Whisper("Du erhÃ¤ltst nun wieder globale Benachrichtigungen.");
 
 
 
@@ -2662,7 +2662,7 @@ namespace HabboIM.HabboHotel.Misc
 
 
                                 TargetClient.GetHabbo().gc = 0;
-                                Session.GetHabbo().Whisper("Dem User " + TargetClient.GetHabbo().Username + " wurden die Rechte für den Globalen Chat entfernt.");
+                                Session.GetHabbo().Whisper("Dem User " + TargetClient.GetHabbo().Username + " wurden die Rechte fÃ¼r den Globalen Chat entfernt.");
 
                                 TargetClient.GetHabbo().Whisper("Dir wurden folgende Rechte entzogen: Globalchat");
                                 HabboIM.GetGame().GetClientManager().method_31(Session, Params[0].ToLower(), Input);
@@ -2769,7 +2769,7 @@ namespace HabboIM.HabboHotel.Misc
 
 
                                 TargetClient.GetHabbo().gc = 1;
-                                Session.GetHabbo().Whisper("Dem User " + TargetClient.GetHabbo().Username + " wurden die Rechte für den Globalen Chat gegeben");
+                                Session.GetHabbo().Whisper("Dem User " + TargetClient.GetHabbo().Username + " wurden die Rechte fÃ¼r den Globalen Chat gegeben");
 
                                 TargetClient.GetHabbo().Whisper("Dir wurden folgende Rechte zugeteilt: Globalchat");
                                 HabboIM.GetGame().GetClientManager().method_31(Session, Params[0].ToLower(), Input);
@@ -2791,7 +2791,7 @@ namespace HabboIM.HabboHotel.Misc
                                 int timenow = (int)HabboIM.GetUnixTimestamp();
                                 if (Session.GetHabbo().AchievementScore < 1200 || timenow <= createdcheck)
                                 {
-                                    Session.SendNotification("Du benötigst 1200 Erfahrungspunkte und musst 7 Tage im Habbo registriert sein um den Globalchat benutzen zu können!");
+                                    Session.SendNotification("Du benÃ¶tigst 1200 Erfahrungspunkte und musst 7 Tage im Habbo registriert sein um den Globalchat benutzen zu kÃ¶nnen!");
 
                                     return true;
                                 }
@@ -2887,7 +2887,7 @@ namespace HabboIM.HabboHotel.Misc
                                 }
                                 if (TargetClient.GetHabbo().Rank >= Session.GetHabbo().Rank)
                                 {
-                                    Session.GetHabbo().Whisper("Du besitzt nicht die nötigen Rechte.");
+                                    Session.GetHabbo().Whisper("Du besitzt nicht die nÃ¶tigen Rechte.");
                                     HabboIM.GetGame().GetClientManager().method_31(Session, Params[0].ToLower(), Input);
                                     result = true;
                                     return result;
@@ -2900,7 +2900,7 @@ namespace HabboIM.HabboHotel.Misc
                                 TargetClient.GetHabbo().UpdateJail(true);
 
                                 ServerMessage Message = new ServerMessage(35u);
-                                Message.AppendStringWithBreak("Aufgrund eines Regelverstoßes wurdest du dauerhaft aus Habbo gebannt!\r\r", 13);
+                                Message.AppendStringWithBreak("Aufgrund eines RegelverstoÃŸes wurdest du dauerhaft aus Habbo gebannt!\r\r", 13);
                                 Message.AppendStringWithBreak("Banngrund: " + ChatCommandHandler.MergeParams(Params, 2));
                                 Message.AppendStringWithBreak("Gebannt von: "+ Session.GetHabbo().Username +"");
                                 TargetClient.SendMessage(Message);
@@ -2988,19 +2988,18 @@ namespace HabboIM.HabboHotel.Misc
                                             if (Session.GetHabbo().collector == true && Session.GetHabbo().CurrentRoom == class3)
                                             {
 
-                                                var random_diamonds = new Random();//Das sorgt dafür das variable random_diamons einen Rand ablegt. Also Random
-                                                var random_enten = new Random(); // Sorgt wie oben nur halt enten...
+                                                var random_diamonds = new Random();
+                                                var random_enten = new Random();
                                                 RoomUser class9553104 = class2.GetRoomUserByHabbo(Session.GetHabbo().Id);
 
                                                 if (Session.GetHabbo().last_dia + 11 * 60 < HabboIM.GetUnixTimestamp())
                                                 {
-                                                    //hier sagen wir er soll 1-5 nutzen. hierbei greift er auf random_diaonds zu. dahier sagt er also maximal 1-5 als RANDOM denn sonst könnte auch 8998 raus kommen und dann würde es nicht funktionierern...
-                                                    switch (random_diamonds.Next(1, 5))
+                                                     switch (random_diamonds.Next(1, 5))
                                                     {
 
                                                         case 1:
                                                             GameClient search_event_k1 = class9553104.GetClient();
-                                                            class9553104.HandleSpeech(search_event_k1, "*Gräbt einen kleinen Kristall aus*", false);
+                                                            class9553104.HandleSpeech(search_event_k1, "*GrÃ¤bt einen kleinen Kristall aus*", false);
 
                                                             Session.GetHabbo().last_dia = HabboIM.GetUnixTimestamp();
                                                             Session.GetHabbo().Whisper("Du hast 1 Kristall gefunden!");
@@ -3014,7 +3013,7 @@ namespace HabboIM.HabboHotel.Misc
 
                                                         case 2:
                                                             GameClient search_event_k5 = class9553104.GetClient();
-                                                            class9553104.HandleSpeech(search_event_k5, "*Gräbt 5 Kristalle aus*", false);
+                                                            class9553104.HandleSpeech(search_event_k5, "*GrÃ¤bt 5 Kristalle aus*", false);
 
                                                             Session.GetHabbo().last_dia = HabboIM.GetUnixTimestamp();
                                                             Session.GetHabbo().Whisper("Du hast 5 Kristalle gefunden!");
@@ -3029,7 +3028,7 @@ namespace HabboIM.HabboHotel.Misc
 
                                                         case 3:
                                                             GameClient search_event_k4 = class9553104.GetClient();
-                                                            class9553104.HandleSpeech(search_event_k4, "*Gräbt 4 Kristalle aus*", false);
+                                                            class9553104.HandleSpeech(search_event_k4, "*GrÃ¤bt 4 Kristalle aus*", false);
 
                                                             Session.GetHabbo().last_dia = HabboIM.GetUnixTimestamp();
                                                             Session.GetHabbo().Whisper("Du hast 4 Kristalle gefunden!");
@@ -3044,7 +3043,7 @@ namespace HabboIM.HabboHotel.Misc
 
                                                         case 4:
                                                             GameClient search_event_k3 = class9553104.GetClient();
-                                                            class9553104.HandleSpeech(search_event_k3, "*Gräbt 3 Kristalle aus*", false);
+                                                            class9553104.HandleSpeech(search_event_k3, "*GrÃ¤bt 3 Kristalle aus*", false);
 
                                                             Session.GetHabbo().last_dia = HabboIM.GetUnixTimestamp();
                                                             Session.GetHabbo().Whisper("Du hast 3 Kristalle gefunden!");
@@ -3059,7 +3058,7 @@ namespace HabboIM.HabboHotel.Misc
 
                                                         case 5:
                                                             GameClient search_event_k2 = class9553104.GetClient();
-                                                            class9553104.HandleSpeech(search_event_k2, "*Gräbt 2 Kristalle aus*", false);
+                                                            class9553104.HandleSpeech(search_event_k2, "*GrÃ¤bt 2 Kristalle aus*", false);
 
                                                             Session.GetHabbo().last_dia = HabboIM.GetUnixTimestamp();
                                                             Session.GetHabbo().Whisper("Du hast 2 Kristalle gefunden!");
@@ -3081,7 +3080,7 @@ namespace HabboIM.HabboHotel.Misc
 
                                                         case 1:
                                                             GameClient search_event_e5 = class9553104.GetClient();
-                                                            class9553104.HandleSpeech(search_event_e5, "*Fängt 5 Enten ein*", false);
+                                                            class9553104.HandleSpeech(search_event_e5, "*FÃ¤ngt 5 Enten ein*", false);
 
                                                             Session.GetHabbo().last_ente = HabboIM.GetUnixTimestamp();
                                                             Session.GetHabbo().Whisper("Du hast gerade 5 Enten gefunden.");
@@ -3096,7 +3095,7 @@ namespace HabboIM.HabboHotel.Misc
 
                                                         case 2:
                                                             GameClient search_event_e3 = class9553104.GetClient();
-                                                            class9553104.HandleSpeech(search_event_e3, "*Fängt 3 Enten ein*", false);
+                                                            class9553104.HandleSpeech(search_event_e3, "*FÃ¤ngt 3 Enten ein*", false);
 
                                                             Session.GetHabbo().last_ente = HabboIM.GetUnixTimestamp();
                                                             Session.GetHabbo().Whisper("Du hast gerade 3 Enten gefunden.");
@@ -3110,7 +3109,7 @@ namespace HabboIM.HabboHotel.Misc
 
                                                         case 3:
                                                             GameClient search_event_e2 = class9553104.GetClient();
-                                                            class9553104.HandleSpeech(search_event_e2, "*Fängt 2 Enten ein*", false);
+                                                            class9553104.HandleSpeech(search_event_e2, "*FÃ¤ngt 2 Enten ein*", false);
 
                                                             Session.GetHabbo().last_ente = HabboIM.GetUnixTimestamp();
                                                             Session.GetHabbo().Whisper("Du hast gerade 2 Enten gefunden.");
@@ -3124,7 +3123,7 @@ namespace HabboIM.HabboHotel.Misc
 
                                                         case 4:
                                                             GameClient search_event_e4 = class9553104.GetClient();
-                                                            class9553104.HandleSpeech(search_event_e4, "*Fängt 4 Enten ein*", false);
+                                                            class9553104.HandleSpeech(search_event_e4, "*FÃ¤ngt 4 Enten ein*", false);
 
                                                             Session.GetHabbo().last_ente = HabboIM.GetUnixTimestamp();
                                                             Session.GetHabbo().Whisper("Du hast gerade 4 Enten gefunden.");
@@ -3138,7 +3137,7 @@ namespace HabboIM.HabboHotel.Misc
 
                                                         case 5:
                                                             GameClient search_event_e1 = class9553104.GetClient();
-                                                            class9553104.HandleSpeech(search_event_e1, "*Fängt eine kleine süße Ente ein*", false);
+                                                            class9553104.HandleSpeech(search_event_e1, "*FÃ¤ngt eine kleine sÃ¼ÃŸe Ente ein*", false);
 
                                                             Session.GetHabbo().last_ente = HabboIM.GetUnixTimestamp();
                                                             Session.GetHabbo().Whisper("Du hast gerade 1 Ente gefunden.");
@@ -3203,7 +3202,7 @@ namespace HabboIM.HabboHotel.Misc
                                         Message4.AppendBoolean(class3.IsPublic);
                                         Message4.AppendUInt(class3.Id);
                                         Session.SendMessage(Message4);
-                                        Session.SendNotification("Du hast aufgehört, nach Enten und Kristallen zu suchen!");
+                                        Session.SendNotification("Du hast aufgehÃ¶rt, nach Enten und Kristallen zu suchen!");
                                         return true;
                                     }
 
@@ -3564,7 +3563,7 @@ namespace HabboIM.HabboHotel.Misc
                                 }
                                 if (Session.GetHabbo().Rank <= TargetClient.GetHabbo().Rank)
                                 {
-                                    Session.GetHabbo().Whisper("Du besitzt nicht die nötigen Rechte.");
+                                    Session.GetHabbo().Whisper("Du besitzt nicht die nÃ¶tigen Rechte.");
                                     HabboIM.GetGame().GetClientManager().method_31(Session, Params[0].ToLower(), Input);
                                     result = true;
                                     return result;
@@ -3741,13 +3740,13 @@ namespace HabboIM.HabboHotel.Misc
                                     {
                                         if (!Session.GetHabbo().GetBadgeComponent().HasBadge("NAMECHANGE"))
                                         {
-                                            Session.GetHabbo().Whisper("Du darfst deinen Usernamen nicht ändern!");
+                                            Session.GetHabbo().Whisper("Du darfst deinen Usernamen nicht Ã¤ndern!");
                                             result = true;
                                             return result;
                                         }
                                         if (Session.GetHabbo().VipPoints < 10)
                                         {
-                                            Session.GetHabbo().Whisper("Um deinen Usernamen ändern zu können, benötigst du 10 Sterne.");
+                                            Session.GetHabbo().Whisper("Um deinen Usernamen Ã¤ndern zu kÃ¶nnen, benÃ¶tigst du 10 Sterne.");
                                             result = true;
                                             return result;
                                         }
@@ -3759,7 +3758,7 @@ namespace HabboIM.HabboHotel.Misc
                                             int timenow = (int)HabboIM.GetUnixTimestamp();
                                             if (timenow < changetimecheck)
                                             {
-                                                Session.GetHabbo().Whisper("Du kannst deinen Namen nur alle 7 Tage ändern!");
+                                                Session.GetHabbo().Whisper("Du kannst deinen Namen nur alle 7 Tage Ã¤ndern!");
                                                 result = true;
                                                 return result;
                                             }
@@ -4582,23 +4581,23 @@ namespace HabboIM.HabboHotel.Misc
                                                              text7 += "- - - - - - - - - - - - - - - - - - - - - -\r\r";
                                                              if (Session.GetHabbo().Rank > 6u)
                                                              {
-                                                                 text7 += "Admin Commands:\r~~~~~~~~~~~~~~\r:jail [USERNAME] [MINUTEN] - Sperrt den Spieler für x Minuten in den Knast!\r:verwarnung [USERNAME] [GRUND] - Erstellt einen Verwarneintrag.\r:spielerakte [USERNAME] [EINTRAG] - Erstellt einen Akteneintrag.\r:delaws [USERNAME] - Leert AntiWerber Verwarnungen vom User.\r:delbws [USERNAME] - Entfernt Beleidigungsverwarnungen von einem User.\r:eventha [EVENTNAME] - Lädt alle User zu einem Event ein.\r:reloadws - Startet die WebSocket Verbindung neu.\r:rw [USERNAME] - Weist den Spieler auf seine negative Spielweise hin.\r:offban [USERNAME] - Bannt den User offline.\r:wc <nachricht> - Versendet eine globale Flüsternachricht.\r:ac <nachricht> - Versendet eine Nachricht an alle Admins.\r:aduty - Wechselt in den Admi-Dienst.\r\r";
+                                                                 text7 += "Admin Commands:\r~~~~~~~~~~~~~~\r:jail [USERNAME] [MINUTEN] - Sperrt den Spieler fÃ¼r x Minuten in den Knast!\r:verwarnung [USERNAME] [GRUND] - Erstellt einen Verwarneintrag.\r:spielerakte [USERNAME] [EINTRAG] - Erstellt einen Akteneintrag.\r:delaws [USERNAME] - Leert AntiWerber Verwarnungen vom User.\r:delbws [USERNAME] - Entfernt Beleidigungsverwarnungen von einem User.\r:eventha [EVENTNAME] - LÃ¤dt alle User zu einem Event ein.\r:reloadws - Startet die WebSocket Verbindung neu.\r:rw [USERNAME] - Weist den Spieler auf seine negative Spielweise hin.\r:offban [USERNAME] - Bannt den User offline.\r:wc <nachricht> - Versendet eine globale FlÃ¼sternachricht.\r:ac <nachricht> - Versendet eine Nachricht an alle Admins.\r:aduty - Wechselt in den Admi-Dienst.\r\r";
                                                              }
                                                              if (Session.GetHabbo().Rank > 1u)
                                                              {
-                                                                 text7 += "Coole Commands\r~~~~~~~~~~~~~~\r:mimic [USERNAME] - kopiert die Habbo Style\r:follow [USERNAME] - verfolgt ein User\r:push [USERNAME] - schubst einen User von dir weg\r:pull [USERNAME] - zieht einen User zu dir\r:spush [USERNAME] - schubst einen User von dir weg\r:moonwalk - rückwärts gehen\r:pet [ID] - verwandelt sich als Haustier (Haustierliste: \":pet help\")\r:raumalert [TEXT] - informiert die User per Raumalert\r:myteleport - teleportiert in deine eigene Räume\r:roomfreeze - Friert alle in deinem Raum ein.\r:setspeed <1-50> - Stellt die Geschwindigkeit deiner Roller um.\r:spull <username> - Zieht einen User von weitem zu dir.\r:roomeffect <enable id> - Setzt jedem Spieler in deinem Raum ein Effekt.\r:freeze <username> - Friert einen Spieler ein.\r:override - Lässt dich über Möbel laufen.\r:freeze <username> - Friert einen Spieler ein.\r:fastwoff - Deaktiviert Fastwalk in deinem Raum.\r:fastwon - Aktiviert Fastwalk in deinem Raum.\r\r";
+                                                                 text7 += "Coole Commands\r~~~~~~~~~~~~~~\r:mimic [USERNAME] - kopiert die Habbo Style\r:follow [USERNAME] - verfolgt ein User\r:push [USERNAME] - schubst einen User von dir weg\r:pull [USERNAME] - zieht einen User zu dir\r:spush [USERNAME] - schubst einen User von dir weg\r:moonwalk - rÃ¼ckwÃ¤rts gehen\r:pet [ID] - verwandelt sich als Haustier (Haustierliste: \":pet help\")\r:raumalert [TEXT] - informiert die User per Raumalert\r:myteleport - teleportiert in deine eigene RÃ¤ume\r:roomfreeze - Friert alle in deinem Raum ein.\r:setspeed <1-50> - Stellt die Geschwindigkeit deiner Roller um.\r:spull <username> - Zieht einen User von weitem zu dir.\r:roomeffect <enable id> - Setzt jedem Spieler in deinem Raum ein Effekt.\r:freeze <username> - Friert einen Spieler ein.\r:override - LÃ¤sst dich Ã¼ber MÃ¶bel laufen.\r:freeze <username> - Friert einen Spieler ein.\r:fastwoff - Deaktiviert Fastwalk in deinem Raum.\r:fastwon - Aktiviert Fastwalk in deinem Raum.\r\r";
                                                              }
 
                                                              string text8 = text7;
                                                              text7 = string.Concat(new string[]
                                      {
                                          text8,
-                                         "Standard Commands:\r~~~~~~~~~~~~~~\r:coords - zeigt die Koordinaten\r:enable [ID] - aktiviert ein Effekt\r:lay - sich hinlegen\r:sit - sich hinsetzen\r:handitem [ID] - aktiviert ein Handitem (Kaffee, Popcorn, etc.)\r:pickall - nimmt alle Möbel im Raum auf\r:unload - lädt den Raum neu\r:disablediagonal - verbietet das Laufen des Diagonals\r:setmax [ZAHL] - ändert die maximale Anzahl an Usern in einem Raum\r:convertcredits - löst alle Taler im Inventar als Währung ein\r:redeempixel - löst alle Pixel im Inventar als Währung ein\r:ride [NAME] - reitet ein Pferd\r:buy [ZAHL] - mehrere Möbel im Katalog gleichzeitig kaufen\r:emptypets - löscht alle deine Haustiere im Inventar\r:emptyitems - löscht alle deine Möbel im Inventar\r:raumkick  - kickt alle User im Raum\r:afk & :brb - markiert dich als AFK\r:zahl [ZAHL] - zeigt ein Schild mit der Zahl von 0 bis 10\r:kiss [USERNAME] - küsst ein User\r:sellroom [TALER] - verkauft ein Raum für bestimmten Betrag an Taler\r:buyroom - kauft ein Raum ein\r:werber [USERNAME] - meldet ein Werber direkt an die Staffs\r:staff - zeigt alle Mitarbeiter, die gerade online sind\r:sneeze - Niesen\r:ehe [USERNAME] - Einem User einen Heiratsantrag machen\r:kill [USERNAME] - Einen Spieler töten\r:love [USERNAME] - Jemanden lieben\r:knuddel [USERNAME] - Knuddel jemanden!\r:like [USERNAME] - Jemanden liken\r:umarm [USERNAME] - Jemanden umarmen\r:box [USERNAME] - Jemanden ins Gesicht boxen\r:wil [USERNAME] - Einen User Willkommen heißen\r:developer - Informationen über die Entwicklung des Emulators\r:cheat [USERNAME] - Zeigt dir eine kleine Userinfo eines Spielers\r:shisha - Rauche eine Shisha\r:faceless - Lasse dein Gesicht verschwinden\r:regen - Lass es in deinem Raum regnen\r:sonne - Lass in deinem Raum die Sonne scheinen!\r:dislike - Dislike jemanden!\r:hot - Finde jemanden heiß!\r:habnam - Tanze den Habnamstyle!\r:jump - Springe hoch in die Luft!\r:rauchen - Zünde dir eine Zigarette an.\r:info <username> - Zeigt dir Informationen über einen User an.\r:beziehung <username> - Versendet eine Beziehungsanfrage.\r:minitanz <1-3> - Lässt deinen Habbo im Minilook tanzen!\r:fastwalk - Lässt deinen Habbo schneller laufen.\r:fasterwalk - Lässt deinen Habbo noch schneller laufen.\r:gc <nachricht> - Versendet eine globale Nachricht an alle Habbos.\r:mutegc - Schaltet globale Benachrichtigungen stumm.\r\r"
+                                         "Standard Commands:\r~~~~~~~~~~~~~~\r:coords - zeigt die Koordinaten\r:enable [ID] - aktiviert ein Effekt\r:lay - sich hinlegen\r:sit - sich hinsetzen\r:handitem [ID] - aktiviert ein Handitem (Kaffee, Popcorn, etc.)\r:pickall - nimmt alle MÃ¶bel im Raum auf\r:unload - lÃ¤dt den Raum neu\r:disablediagonal - verbietet das Laufen des Diagonals\r:setmax [ZAHL] - Ã¤ndert die maximale Anzahl an Usern in einem Raum\r:convertcredits - lÃ¶st alle Taler im Inventar als WÃ¤hrung ein\r:redeempixel - lÃ¶st alle Pixel im Inventar als WÃ¤hrung ein\r:ride [NAME] - reitet ein Pferd\r:buy [ZAHL] - mehrere MÃ¶bel im Katalog gleichzeitig kaufen\r:emptypets - lÃ¶scht alle deine Haustiere im Inventar\r:emptyitems - lÃ¶scht alle deine MÃ¶bel im Inventar\r:raumkick  - kickt alle User im Raum\r:afk & :brb - markiert dich als AFK\r:zahl [ZAHL] - zeigt ein Schild mit der Zahl von 0 bis 10\r:kiss [USERNAME] - kÃ¼sst ein User\r:sellroom [TALER] - verkauft ein Raum fÃ¼r bestimmten Betrag an Taler\r:buyroom - kauft ein Raum ein\r:werber [USERNAME] - meldet ein Werber direkt an die Staffs\r:staff - zeigt alle Mitarbeiter, die gerade online sind\r:sneeze - Niesen\r:ehe [USERNAME] - Einem User einen Heiratsantrag machen\r:kill [USERNAME] - Einen Spieler tÃ¶ten\r:love [USERNAME] - Jemanden lieben\r:knuddel [USERNAME] - Knuddel jemanden!\r:like [USERNAME] - Jemanden liken\r:umarm [USERNAME] - Jemanden umarmen\r:box [USERNAME] - Jemanden ins Gesicht boxen\r:wil [USERNAME] - Einen User Willkommen heiÃŸen\r:developer - Informationen Ã¼ber die Entwicklung des Emulators\r:cheat [USERNAME] - Zeigt dir eine kleine Userinfo eines Spielers\r:shisha - Rauche eine Shisha\r:faceless - Lasse dein Gesicht verschwinden\r:regen - Lass es in deinem Raum regnen\r:sonne - Lass in deinem Raum die Sonne scheinen!\r:dislike - Dislike jemanden!\r:hot - Finde jemanden heiÃŸ!\r:habnam - Tanze den Habnamstyle!\r:jump - Springe hoch in die Luft!\r:rauchen - ZÃ¼nde dir eine Zigarette an.\r:info <username> - Zeigt dir Informationen Ã¼ber einen User an.\r:beziehung <username> - Versendet eine Beziehungsanfrage.\r:minitanz <1-3> - LÃ¤sst deinen Habbo im Minilook tanzen!\r:fastwalk - LÃ¤sst deinen Habbo schneller laufen.\r:fasterwalk - LÃ¤sst deinen Habbo noch schneller laufen.\r:gc <nachricht> - Versendet eine globale Nachricht an alle Habbos.\r:mutegc - Schaltet globale Benachrichtigungen stumm.\r\r"
                                      });
 
                                                              if (Session.GetHabbo().Rank > 1u)
                                                              {
-                                                                 text7 += "FX Commands\r~~~~~~~~~~~~~~\r:iohawk <farbe> - Aktiviert ein IO Hawk.\r:springen <1-3> - Lässt deinen Avatar springen.\r:laufen <1-2> - Lässt deinen Avatar auf der Stelle laufen.\r:feel <gefühl> - Drückt Emotionen aus.\r:waffe <1-4> - Eine Waffe für deinen Habbo!\r:mini <1-4> - verwandelt dich in einen kleinen Habbo.\r:fly - Lässt deinen Habbo auf einem Besen fliegen!\r:user <username> - Für User die ihre eigenen Enables gewonnen haben.\r\rStand: 01.01.2020\rZuletzt aktualisiert von: BusinessMan";
+                                                                 text7 += "FX Commands\r~~~~~~~~~~~~~~\r:iohawk <farbe> - Aktiviert ein IO Hawk.\r:springen <1-3> - LÃ¤sst deinen Avatar springen.\r:laufen <1-2> - LÃ¤sst deinen Avatar auf der Stelle laufen.\r:feel <gefÃ¼hl> - DrÃ¼ckt Emotionen aus.\r:waffe <1-4> - Eine Waffe fÃ¼r deinen Habbo!\r:mini <1-4> - verwandelt dich in einen kleinen Habbo.\r:fly - LÃ¤sst deinen Habbo auf einem Besen fliegen!\r:user <username> - FÃ¼r User die ihre eigenen Enables gewonnen haben.\r\rStand: 01.01.2020\rZuletzt aktualisiert von: BusinessMan";
                                                              }
 
                                                              Session.SendNotification(text7, 2);
@@ -5039,20 +5038,20 @@ namespace HabboIM.HabboHotel.Misc
                                                             int timenow = (int)HabboIM.GetUnixTimestamp();
                                                             if (timenow <= createdcheck || Session.GetHabbo().AchievementScore < 600)
                                                             {
-                                                                Session.SendNotification("Du musst mindestens 3 Tage im Habbo registriert sein und 600 Aktivitätspunkte haben um diesen Befehl ausführen zu können!");
+                                                                Session.SendNotification("Du musst mindestens 3 Tage im Habbo registriert sein und 600 AktivitÃ¤tspunkte haben um diesen Befehl ausfÃ¼hren zu kÃ¶nnen!");
                                                                 result = true;
                                                                 return result;
                                                             }
                                                             string stringpet = ChatCommandHandler.MergeParams(Params, 1);
                                                             if (!(stringpet != ""))
                                                             {
-                                                                Session.SendNotification("Bitte eine Haustier ID auswählen. Haustier ID findest du über den Command \":pet help\"");
+                                                                Session.SendNotification("Bitte eine Haustier ID auswÃ¤hlen. Haustier ID findest du Ã¼ber den Command \":pet help\"");
                                                                 result = true;
                                                                 return result;
                                                             }
                                                             if (!(Params[1] != "help"))
                                                             {
-                                                                Session.SendNotification("Haustiere ID:\n\n0 -> Hund\n1 -> Katze\n2 -> Krokodil\n3 -> Terrier\n4 -> Eisbär\n5 -> Schwein\n6 -> Löwe\n7 -> Nashorn\n8 -> Spinne\n9 -> Schildkröte\n10 -> Küken\n11 -> Frosch\n12 -> Drache\n13 -> Pferd\n14 -> Affe\n15 -> -\n16 -> Monsterpflanze\n17 -> Weißer Hase\n18 -> Böser Hase\n19 -> gelangweilter Hase\n20 -> verliebter Hase\n21 -> weiße Taube\n22 -> schwarze Taube\n23 -> Unbekannt\n24 -> Zwerg\n25 -> Baby Bär\n26 -> Baby Terrier\n27 -> Pikachu\n28 -> Mario\n29 -> Pinguin\n30 -> Elefant\n31 -> Haloompa\n32 -> Stein\n33 -> Flugsaurer\n34 -> Velociraptor\n35 -> Baby Katze\n36 -> Baby Hund\n\nUm zurück zu verwandeln: \":habbo\" Command benutzen.\n\nViel Spaß damit!");
+                                                                Session.SendNotification("Haustiere ID:\n\n0 -> Hund\n1 -> Katze\n2 -> Krokodil\n3 -> Terrier\n4 -> EisbÃ¤r\n5 -> Schwein\n6 -> LÃ¶we\n7 -> Nashorn\n8 -> Spinne\n9 -> SchildkrÃ¶te\n10 -> KÃ¼ken\n11 -> Frosch\n12 -> Drache\n13 -> Pferd\n14 -> Affe\n15 -> -\n16 -> Monsterpflanze\n17 -> WeiÃŸer Hase\n18 -> BÃ¶ser Hase\n19 -> gelangweilter Hase\n20 -> verliebter Hase\n21 -> weiÃŸe Taube\n22 -> schwarze Taube\n23 -> Unbekannt\n24 -> Zwerg\n25 -> Baby BÃ¤r\n26 -> Baby Terrier\n27 -> Pikachu\n28 -> Mario\n29 -> Pinguin\n30 -> Elefant\n31 -> Haloompa\n32 -> Stein\n33 -> Flugsaurer\n34 -> Velociraptor\n35 -> Baby Katze\n36 -> Baby Hund\n\nUm zurÃ¼ck zu verwandeln: \":habbo\" Command benutzen.\n\nViel SpaÃŸ damit!");
                                                                 result = true;
                                                                 return result;
                                                             }
@@ -5061,7 +5060,7 @@ namespace HabboIM.HabboHotel.Misc
                                                             {
                                                                 int UserPetId = int.Parse(Params[1]);
                                                                 Session.GetHabbo().PetData = UserPetId + " 0 #fff";
-                                                                Session.SendNotification("Du bist jetzt ein Tier! Bitte lade den Raum neu, damit die Änderungen wirksam werden.\n\nFalls du kein Tier mehr sein möchtest musst du :habbo eingeben und den Raum neuladen.");
+                                                                Session.SendNotification("Du bist jetzt ein Tier! Bitte lade den Raum neu, damit die Ã„nderungen wirksam werden.\n\nFalls du kein Tier mehr sein mÃ¶chtest musst du :habbo eingeben und den Raum neuladen.");
                                                                 result = true;
                                                                 return result;
                                                             }
@@ -5137,7 +5136,7 @@ namespace HabboIM.HabboHotel.Misc
 
                                                             if (Session.GetHabbo().whisperlog == true)
                                                             {
-                                                                Session.GetHabbo().Whisper("Der Flüsterchatlog ist nun für dich ausgeschaltet.");
+                                                                Session.GetHabbo().Whisper("Der FlÃ¼sterchatlog ist nun fÃ¼r dich ausgeschaltet.");
                                                                 Session.GetHabbo().whisperlog = false;
 
 
@@ -5148,7 +5147,7 @@ namespace HabboIM.HabboHotel.Misc
 
                                                             if (Session.GetHabbo().whisperlog == false)
                                                             {
-                                                                Session.GetHabbo().Whisper("Der Flüsterchatlog ist nun für dich eingeschaltet.");
+                                                                Session.GetHabbo().Whisper("Der FlÃ¼sterchatlog ist nun fÃ¼r dich eingeschaltet.");
                                                                 Session.GetHabbo().whisperlog = true;
 
 
@@ -5194,7 +5193,7 @@ namespace HabboIM.HabboHotel.Misc
                                                                 }
                                                                 else
                                                                 {
-                                                                    Session.GetHabbo().Whisper("Wähle eine ID zwischen 1-4 aus!");
+                                                                    Session.GetHabbo().Whisper("WÃ¤hle eine ID zwischen 1-4 aus!");
                                                                 }
 
                                                                 return true;
@@ -5216,7 +5215,7 @@ namespace HabboIM.HabboHotel.Misc
 
                                                             if (Params.Length >= 2)
                                                             {
-                                                                talk.HandleSpeech(TargetClient, "Bin gleich zurück! (Grund: " + MergeParams(Params, 1) + ")", false);
+                                                                talk.HandleSpeech(TargetClient, "Bin gleich zurÃ¼ck! (Grund: " + MergeParams(Params, 1) + ")", false);
                                                                 class4.GetClient().GetHabbo().GetEffectsInventoryComponent().method_2(500, true);
                                                             }
                                                             else
@@ -5255,7 +5254,7 @@ namespace HabboIM.HabboHotel.Misc
                                                         }
                                                         else
                                                         {
-                                                            Session.SendNotification("Du bist bereits weg, komm doch erstmal wieder zurück! (:wd).");
+                                                            Session.SendNotification("Du bist bereits weg, komm doch erstmal wieder zurÃ¼ck! (:wd).");
                                                             return true;
                                                         }
 
@@ -5372,7 +5371,7 @@ namespace HabboIM.HabboHotel.Misc
                                                             }
                                                             if (!flag3)
                                                             {
-                                                                Session.GetHabbo().Whisper("Wenn ihr euch küssen wollt, müsst ihr Freunde sein.");
+                                                                Session.GetHabbo().Whisper("Wenn ihr euch kÃ¼ssen wollt, mÃ¼sst ihr Freunde sein.");
                                                                 result = true;
                                                                 return result;
                                                             }
@@ -5385,7 +5384,7 @@ namespace HabboIM.HabboHotel.Misc
 
                                                                 TargetClient = User2;
 
-                                                                roomUserByHabbo3.HandleSpeech(Session, "*küsst " + User2.GetHabbo().Username + "*", false);
+                                                                roomUserByHabbo3.HandleSpeech(Session, "*kÃ¼sst " + User2.GetHabbo().Username + "*", false);
                                                                 try
                                                                 {
 
@@ -5404,8 +5403,8 @@ namespace HabboIM.HabboHotel.Misc
                                                                         }
                                                                         try
                                                                         {
-                                                                            HabboIM.GetWebSocketManager().getWebSocketByName(TargetClient.GetHabbo().Username).Send("kisshug|" + Session.GetHabbo().Username + " hat dich geküsst!|2|Beziehungspunkte");
-                                                                            HabboIM.GetWebSocketManager().getWebSocketByName(Session.GetHabbo().Username).Send("kisshug|Du hast " + TargetClient.GetHabbo().Username + " geküsst!|2|Beziehungspunkte");
+                                                                            HabboIM.GetWebSocketManager().getWebSocketByName(TargetClient.GetHabbo().Username).Send("kisshug|" + Session.GetHabbo().Username + " hat dich gekÃ¼sst!|2|Beziehungspunkte");
+                                                                            HabboIM.GetWebSocketManager().getWebSocketByName(Session.GetHabbo().Username).Send("kisshug|Du hast " + TargetClient.GetHabbo().Username + " gekÃ¼sst!|2|Beziehungspunkte");
 
                                                                             Session.GetHabbo().lovepoints += 2;
                                                                             TargetClient.GetHabbo().lovepoints += 2;
@@ -5570,14 +5569,14 @@ namespace HabboIM.HabboHotel.Misc
                                                                                     RoomUser roomUser3 = class2.RoomUsers[j];
                                                                                     if (roomUser3 != null)
                                                                                     {
-                                                                                        roomUser3.GetClient().SendNotification("Dieser Raum wird für " + class2.RoomCost + " Taler verkauft!\n\nWenn du den Raum kaufen willst, dann Tippe :buyroom ein.");
+                                                                                        roomUser3.GetClient().SendNotification("Dieser Raum wird fÃ¼r " + class2.RoomCost + " Taler verkauft!\n\nWenn du den Raum kaufen willst, dann Tippe :buyroom ein.");
                                                                                     }
                                                                                 }
                                                                                 HabboIM.GetGame().GetClientManager().method_31(Session, Params[0].ToLower(), string.Concat(new object[]
                                                             {
                                                                 "Raum (ID ",
                                                                 class2.Id,
-                                                                ") für ",
+                                                                ") fÃ¼r ",
                                                                 class2.RoomCost,
                                                                 " verkaufen"
                                                             }));
@@ -5585,7 +5584,7 @@ namespace HabboIM.HabboHotel.Misc
                                                                             else
                                                                             {
                                                                                 class2.CanBuyCheck = false;
-                                                                                Session.SendNotification("Die Preis stimmen nicht mit vorherige Preis überein. Geben Sie erneut ein.");
+                                                                                Session.SendNotification("Die Preis stimmen nicht mit vorherige Preis Ã¼berein. Geben Sie erneut ein.");
                                                                             }
                                                                         }
                                                                         else
@@ -5601,11 +5600,11 @@ namespace HabboIM.HabboHotel.Misc
                                                                         class2.CanBuyCheckTime = (int)HabboIM.GetUnixTimestamp();
                                                                         Session.SendNotification(string.Concat(new object[]
                                                     {
-                                                        "Bist du dir sicher, dieser Raum für ",
+                                                        "Bist du dir sicher, dieser Raum fÃ¼r ",
                                                         class2.RoomCost,
                                                         " Taler zu verkaufen? Wenn ja, geben sie nochmal \":sellroom ",
                                                         class2.RoomCost,
-                                                        " \" ein.\n\nWichtig: Du kannst verkaufte Räume nicht wieder zurück bekommen!"
+                                                        " \" ein.\n\nWichtig: Du kannst verkaufte RÃ¤ume nicht wieder zurÃ¼ck bekommen!"
                                                     }));
                                                                     }
                                                                 }
@@ -5671,7 +5670,7 @@ namespace HabboIM.HabboHotel.Misc
                                             {
                                                 "Raum (ID ",
                                                 class2.Id,
-                                                ") für ",
+                                                ") fÃ¼r ",
                                                 class2.RoomCost,
                                                 " Taler gekauft"
                                             }));
@@ -5802,7 +5801,7 @@ namespace HabboIM.HabboHotel.Misc
                                                         }
                                                         if (!(Session.GetHabbo().CurrentRoom.Owner == Session.GetHabbo().Username))
                                                         {
-                                                            Session.SendNotification("Du kannst das nur in deinen eigenen Räumen machen!");
+                                                            Session.SendNotification("Du kannst das nur in deinen eigenen RÃ¤umen machen!");
                                                             result = true;
                                                             return result;
                                                         }
@@ -5825,7 +5824,7 @@ namespace HabboIM.HabboHotel.Misc
                                                 {
                                                     "Du wurdest vom Raumbesitzer ",
                                                     roomowner,
-                                                    " mit folgender Begründung gekickt:\n\n ",
+                                                    " mit folgender BegrÃ¼ndung gekickt:\n\n ",
                                                     string_
                                                 });
                                                                     roomUser4.GetClient().SendNotification(message);
@@ -5836,7 +5835,7 @@ namespace HabboIM.HabboHotel.Misc
                                                             result = true;
                                                             return result;
                                                         }
-                                                        Session.SendNotification("Du musst dazu eine Nachricht schreiben bzw. die Begründung.");
+                                                        Session.SendNotification("Du musst dazu eine Nachricht schreiben bzw. die BegrÃ¼ndung.");
                                                         result = true;
                                                         return result;
 
@@ -5900,7 +5899,7 @@ namespace HabboIM.HabboHotel.Misc
                                         Session.GetHabbo().Username,
                                         "\" hat den Spieler \"",
                                         class8.Username,
-                                        "\" mit der Begründung \"",
+                                        "\" mit der BegrÃ¼ndung \"",
                                         reason,
                                         "\" verwarnt."
                                     }));
@@ -5942,14 +5941,14 @@ namespace HabboIM.HabboHotel.Misc
                                                         {
                                                             if (!Session.GetHabbo().WerberCmd)
                                                             {
-                                                                Session.SendNotification("Aufgrund eines Regelverstoßes wurde dir dieser Befehl entzogen!");
+                                                                Session.SendNotification("Aufgrund eines RegelverstoÃŸes wurde dir dieser Befehl entzogen!");
                                                                 result = true;
                                                                 return result;
                                                             }
 
                                                             if (HabboIM.GetUnixTimestamp() < Session.GetHabbo().werber_time)
                                                             {
-                                                                Session.GetHabbo().Whisper("Du hast diesen Command eben erst ausgeführt. Gedulde dich jetzt etwas.");
+                                                                Session.GetHabbo().Whisper("Du hast diesen Command eben erst ausgefÃ¼hrt. Gedulde dich jetzt etwas.");
                                                                 return true;
                                                             }
 
@@ -5996,7 +5995,7 @@ namespace HabboIM.HabboHotel.Misc
                                         class8.Username,
                                         "\" (Raum: ",
                                         class8.CurrentRoom.Name,
-                                        ") als Werber alamiert. Bitte prüfe alle Chatlogs!"
+                                        ") als Werber alamiert. Bitte prÃ¼fe alle Chatlogs!"
                                     }));
 
                                                             Session.GetHabbo().werber_time = HabboIM.GetUnixTimestamp() + 60;
@@ -6013,7 +6012,7 @@ namespace HabboIM.HabboHotel.Misc
                                                             }
                                                             if (!(Session.GetHabbo().CurrentRoom.Owner == Session.GetHabbo().Username))
                                                             {
-                                                                Session.SendNotification("Du kannst dich nur in deinen eigenen Räumen teleportieren!");
+                                                                Session.SendNotification("Du kannst dich nur in deinen eigenen RÃ¤umen teleportieren!");
                                                                 result = true;
                                                                 return result;
                                                             }
@@ -6129,7 +6128,7 @@ namespace HabboIM.HabboHotel.Misc
                                                         class2 = HabboIM.GetGame().GetRoomManager().GetRoom(Session.GetHabbo().CurrentRoomId);
                                                         if (class2.CanBuy)
                                                         {
-                                                            Session.SendNotification("Dieser Raum wird für " + class2.RoomCost + " Taler verkauft!\n\nWenn du den Raum kaufen willst, dann tipp :buyroom ein.");
+                                                            Session.SendNotification("Dieser Raum wird fÃ¼r " + class2.RoomCost + " Taler verkauft!\n\nWenn du den Raum kaufen willst, dann tipp :buyroom ein.");
                                                         }
                                                         else
                                                         {
@@ -6325,7 +6324,7 @@ namespace HabboIM.HabboHotel.Misc
                                                             }
                                                             if (TargetClient.GetHabbo().Rank >= Session.GetHabbo().Rank)
                                                             {
-                                                                Session.SendNotification("Du besitzt nicht die nötigen Rechte.");
+                                                                Session.SendNotification("Du besitzt nicht die nÃ¶tigen Rechte.");
                                                                 result = true;
                                                                 return result;
                                                             }
@@ -6336,7 +6335,7 @@ namespace HabboIM.HabboHotel.Misc
                                                                 TargetClient.SendMessage(Message);
                                                                 TargetClient.GetHabbo().IsMuted = true;
                                                                 TargetClient.GetHabbo().int_4 = timer;
-                                                                TargetClient.SendNotification("Du wurdest für " + timer + " Sekunden gemutet!");
+                                                                TargetClient.SendNotification("Du wurdest fÃ¼r " + timer + " Sekunden gemutet!");
                                                                 HabboIM.GetGame().GetClientManager().method_31(Session, Params[0].ToLower(), Input);
                                                                 result = true;
                                                                 return result;
@@ -6371,7 +6370,7 @@ namespace HabboIM.HabboHotel.Misc
                                                                         TargetClient.SendMessage(Message);
                                                                         TargetClient.GetHabbo().IsMuted = true;
                                                                         TargetClient.GetHabbo().int_4 = timer;
-                                                                        TargetClient.SendNotification("Alle im Raum wurden für " + timer + " Sekunden gemutet!");
+                                                                        TargetClient.SendNotification("Alle im Raum wurden fÃ¼r " + timer + " Sekunden gemutet!");
                                                                     }
                                                                 }
                                                                 HabboIM.GetGame().GetClientManager().method_31(Session, Params[0].ToLower(), Input);
@@ -6465,7 +6464,7 @@ namespace HabboIM.HabboHotel.Misc
                                                                 {
                                                                     HabboIM.GetGame().GetNavigator().method_0(dbClient);
                                                                 }
-                                                                Session.SendNotification("Raum erfolgreich in \"Empfohlen vom Staff\" hinzugefügt");
+                                                                Session.SendNotification("Raum erfolgreich in \"Empfohlen vom Staff\" hinzugefÃ¼gt");
                                                                 HabboIM.GetGame().GetClientManager().method_31(Session, Params[0].ToLower(), string.Concat(new object[]
                                         {
                                             "Raum ID ",
@@ -6607,7 +6606,7 @@ namespace HabboIM.HabboHotel.Misc
 
                                                             {
 
-                                                                Session.GetHabbo().Whisper("Dieser Command wurde aufgrund von Instabilitäten deaktiviert. Kommt bald wieder!");
+                                                                Session.GetHabbo().Whisper("Dieser Command wurde aufgrund von InstabilitÃ¤ten deaktiviert. Kommt bald wieder!");
 
                                                                 return true;
 
@@ -6616,7 +6615,7 @@ namespace HabboIM.HabboHotel.Misc
 
                                                             if ( /* Session.GetHabbo().Rank < 2 || */ Session.GetHabbo().AchievementScore < 800)
                                                             {
-                                                                Session.GetHabbo().Whisper("Du benötigst 800 Erfahrungspunkte um diesen Befehl ausführen zu können!");
+                                                                Session.GetHabbo().Whisper("Du benÃ¶tigst 800 Erfahrungspunkte um diesen Befehl ausfÃ¼hren zu kÃ¶nnen!");
 
                                                                 return true;
 
@@ -6624,7 +6623,7 @@ namespace HabboIM.HabboHotel.Misc
                                                             }
                                                             if (users > 50)
                                                             {
-                                                                Session.GetHabbo().Whisper("Es sind mehr als 50 User online, du kannst diesen Befehl nicht ausführen!");
+                                                                Session.GetHabbo().Whisper("Es sind mehr als 50 User online, du kannst diesen Befehl nicht ausfÃ¼hren!");
 
                                                                 return true;
 
@@ -6639,7 +6638,7 @@ namespace HabboIM.HabboHotel.Misc
                                                             {
                                                                 class4.fastwalk = false;
                                                                 class4.fasterwalk = false;
-                                                                Session.GetHabbo().Whisper("Du läufst nun wieder normal.");
+                                                                Session.GetHabbo().Whisper("Du lÃ¤ufst nun wieder normal.");
 
                                                                 return true;
 
@@ -6653,7 +6652,7 @@ namespace HabboIM.HabboHotel.Misc
                                                             {
                                                                 class4.fastwalk = true;
                                                                 class4.fasterwalk = false;
-                                                                Session.GetHabbo().Whisper("Du läufst nun schnell.");
+                                                                Session.GetHabbo().Whisper("Du lÃ¤ufst nun schnell.");
 
                                                                 return true;
 
@@ -6675,7 +6674,7 @@ namespace HabboIM.HabboHotel.Misc
 
                                                             {
 
-                                                                Session.GetHabbo().Whisper("Oops, leider kannst du diesen Befehl nicht ausführen!");
+                                                                Session.GetHabbo().Whisper("Oops, leider kannst du diesen Befehl nicht ausfÃ¼hren!");
 
                                                                 return true;
 
@@ -6688,7 +6687,7 @@ namespace HabboIM.HabboHotel.Misc
 
                                                             if (Session.GetHabbo().AchievementScore < 800)
                                                             {
-                                                                Session.GetHabbo().Whisper("Du benötigst 800 Erfahrungspunkte um diesen Befehl ausführen zu können!");
+                                                                Session.GetHabbo().Whisper("Du benÃ¶tigst 800 Erfahrungspunkte um diesen Befehl ausfÃ¼hren zu kÃ¶nnen!");
 
                                                                 return true;
 
@@ -6696,7 +6695,7 @@ namespace HabboIM.HabboHotel.Misc
                                                             }
                                                             if (users > 50)
                                                             {
-                                                                Session.GetHabbo().Whisper("Es sind mehr als 50 User online, du kannst diesen Command nicht ausführen!");
+                                                                Session.GetHabbo().Whisper("Es sind mehr als 50 User online, du kannst diesen Command nicht ausfÃ¼hren!");
 
                                                                 return true;
 
@@ -6714,7 +6713,7 @@ namespace HabboIM.HabboHotel.Misc
                                                                 class4.fastwalk = false;
                                                                 class4.fasterwalk = false;
 
-                                                                Session.GetHabbo().Whisper("Du läufst nun wieder normal.");
+                                                                Session.GetHabbo().Whisper("Du lÃ¤ufst nun wieder normal.");
 
                                                                 return true;
 
@@ -6729,7 +6728,7 @@ namespace HabboIM.HabboHotel.Misc
                                                                 class4.fastwalk = true;
                                                                 class4.fasterwalk = true;
 
-                                                                Session.GetHabbo().Whisper("Du läufst nun schnell.");
+                                                                Session.GetHabbo().Whisper("Du lÃ¤ufst nun schnell.");
 
                                                                 return true;
 
@@ -6816,7 +6815,7 @@ namespace HabboIM.HabboHotel.Misc
 
                                                             if (Session.GetHabbo().support_last > HabboIM.GetUnixTimestamp() - (60 * 60))
                                                             {
-                                                                Session.GetHabbo().Whisper("Diesen Befehl kannst du pro Stunde nur einmal ausführen.");
+                                                                Session.GetHabbo().Whisper("Diesen Befehl kannst du pro Stunde nur einmal ausfÃ¼hren.");
                                                                 return true;
                                                             }
                                                             try
@@ -6830,7 +6829,7 @@ namespace HabboIM.HabboHotel.Misc
                                                    {
                                                     "Support: Der Spieler \"",
                                                     Session.GetHabbo().Username,
-                                                    "\" benötigt dringend im Raum \"",
+                                                    "\" benÃ¶tigt dringend im Raum \"",
                                                     Session.GetHabbo().CurrentRoom.Name,
                                                     "\" Hilfe!\rNachricht: "+ str
                                                    }));
@@ -6843,7 +6842,7 @@ namespace HabboIM.HabboHotel.Misc
                                                             }
                                                             catch
                                                             {
-                                                                Session.GetHabbo().Whisper("Bitte gebe eine Nachricht für den Support ein.");
+                                                                Session.GetHabbo().Whisper("Bitte gebe eine Nachricht fÃ¼r den Support ein.");
                                                                 return true;
 
                                                             }
@@ -7044,7 +7043,7 @@ namespace HabboIM.HabboHotel.Misc
                                                                         }
                                                                         else
                                                                         {
-                                                                            Session.GetHabbo().Whisper("Ihr müsst Freunde sein, um zu Heiraten!");
+                                                                            Session.GetHabbo().Whisper("Ihr mÃ¼sst Freunde sein, um zu Heiraten!");
                                                                             return true;
                                                                         }
                                                                     }
@@ -7155,7 +7154,7 @@ namespace HabboIM.HabboHotel.Misc
                                                                         RoomUser Usr2 = class2.GetRoomUserByHabbo(User2.GetHabbo().Id);
                                                                         if (Math.Abs(Aktuelleruser.X - Usr2.X) < 3 && Math.Abs(Aktuelleruser.Y - Usr2.Y) < 3)
                                                                         {
-                                                                            Aktuelleruser.HandleSpeech(Session, "*Hat " + User2.GetHabbo().Username + " getötet!*", false);
+                                                                            Aktuelleruser.HandleSpeech(Session, "*Hat " + User2.GetHabbo().Username + " getÃ¶tet!*", false);
                                                                             Session.GetHabbo().GetEffectsInventoryComponent().method_2(616, true);
                                                                             User2.GetHabbo().GetEffectsInventoryComponent().method_2(133, true);
                                                                             System.Threading.Thread thrd = new System.Threading.Thread(delegate ()
@@ -7182,7 +7181,7 @@ namespace HabboIM.HabboHotel.Misc
                                                                     }
                                                                     else
                                                                     {
-                                                                        Session.GetHabbo().Whisper("Ihr müsst befreundet sein!");
+                                                                        Session.GetHabbo().Whisper("Ihr mÃ¼sst befreundet sein!");
                                                                         return true;
                                                                     }
                                                                 }
@@ -7240,7 +7239,7 @@ namespace HabboIM.HabboHotel.Misc
                                                                         RoomUser Usr2 = class2.GetRoomUserByHabbo(User2.GetHabbo().Id);
                                                                         if (Math.Abs(Aktuelleruser.X - Usr2.X) < 3 && Math.Abs(Aktuelleruser.Y - Usr2.Y) < 3)
                                                                         {
-                                                                            Aktuelleruser.HandleSpeech(Session, "*Liebt " + User2.GetHabbo().Username + " über alles |*", false);
+                                                                            Aktuelleruser.HandleSpeech(Session, "*Liebt " + User2.GetHabbo().Username + " Ã¼ber alles |*", false);
                                                                             Session.GetHabbo().GetEffectsInventoryComponent().method_2(9, true);
                                                                             User2.GetHabbo().GetEffectsInventoryComponent().method_2(9, true);
                                                                             System.Threading.Thread thrd = new System.Threading.Thread(delegate ()
@@ -7267,7 +7266,7 @@ namespace HabboIM.HabboHotel.Misc
                                                                     }
                                                                     else
                                                                     {
-                                                                        Session.GetHabbo().Whisper("Ihr müsst Freunde sein, um euch zu Lieben");
+                                                                        Session.GetHabbo().Whisper("Ihr mÃ¼sst Freunde sein, um euch zu Lieben");
                                                                         return true;
                                                                     }
                                                                 }
@@ -7324,7 +7323,7 @@ namespace HabboIM.HabboHotel.Misc
                                                                         RoomUser Usr2 = class2.GetRoomUserByHabbo(User2.GetHabbo().Id);
                                                                         if (Math.Abs(Aktuelleruser.X - Usr2.X) < 3 && Math.Abs(Aktuelleruser.Y - Usr2.Y) < 3)
                                                                         {
-                                                                            Aktuelleruser.HandleSpeech(Session, "*" + User2.GetHabbo().Username + " gefällt mir!*", true);
+                                                                            Aktuelleruser.HandleSpeech(Session, "*" + User2.GetHabbo().Username + " gefÃ¤llt mir!*", true);
                                                                             Session.GetHabbo().GetEffectsInventoryComponent().method_2(165, true);
                                                                             User2.GetHabbo().GetEffectsInventoryComponent().method_2(165, true);
                                                                             System.Threading.Thread thrd = new System.Threading.Thread(delegate ()
@@ -7372,7 +7371,7 @@ namespace HabboIM.HabboHotel.Misc
                                                         {
                                                             if (!(Session.GetHabbo().CurrentRoom.Owner == Session.GetHabbo().Username))
                                                             {
-                                                                Session.SendNotification("Du kannst es nur in deinen eigenen Räumen Regnen lassen!");
+                                                                Session.SendNotification("Du kannst es nur in deinen eigenen RÃ¤umen Regnen lassen!");
                                                                 result = true;
                                                                 return result;
                                                             }
@@ -7480,7 +7479,7 @@ namespace HabboIM.HabboHotel.Misc
                                                                     }
                                                                     else
                                                                     {
-                                                                        Session.GetHabbo().Whisper("Ihr müsst Freunde sein, um euch zu Schlagen");
+                                                                        Session.GetHabbo().Whisper("Ihr mÃ¼sst Freunde sein, um euch zu Schlagen");
                                                                         return true;
                                                                     }
                                                                 }
@@ -7614,7 +7613,7 @@ namespace HabboIM.HabboHotel.Misc
                                                                     }
                                                                     else
                                                                     {
-                                                                        Session.GetHabbo().Whisper("Ihr müsst Freunde sein, um euch zu umarmen");
+                                                                        Session.GetHabbo().Whisper("Ihr mÃ¼sst Freunde sein, um euch zu umarmen");
                                                                         return true;
                                                                     }
                                                                 }
@@ -7688,12 +7687,12 @@ namespace HabboIM.HabboHotel.Misc
                                                                     Session.GetHabbo().Whisper("Dein Einsatz ist nun " + einsatz + " Taler.");
                                                                     return true;
                                                                 }
-                                                                Session.GetHabbo().Whisper("Du musst einen gültigen Betrag angeben.");
+                                                                Session.GetHabbo().Whisper("Du musst einen gÃ¼ltigen Betrag angeben.");
                                                                 return true;
                                                             }
                                                             catch
                                                             {
-                                                                Session.GetHabbo().Whisper("Du musst einen gültigen Betrag angeben.");
+                                                                Session.GetHabbo().Whisper("Du musst einen gÃ¼ltigen Betrag angeben.");
                                                                 return true;
                                                             }
                                                         }
@@ -7747,7 +7746,7 @@ namespace HabboIM.HabboHotel.Misc
                                                                     result = true;
                                                                     return result;
                                                                 }
-                                                                TargetClient.GetHabbo().Whisper("Admin " + Session.GetHabbo().Username + " flüstert dir: " + ChatCommandHandler.MergeParams(Params, 2));
+                                                                TargetClient.GetHabbo().Whisper("Admin " + Session.GetHabbo().Username + " flÃ¼stert dir: " + ChatCommandHandler.MergeParams(Params, 2));
 
                                                             }
                                                             catch
@@ -7770,7 +7769,7 @@ namespace HabboIM.HabboHotel.Misc
                                                         { 
                                                         if (/* Session.GetHabbo().Rank < 2 && */ Session.GetHabbo().AchievementScore < 1000)
                                                         {
-                                                            Session.GetHabbo().Whisper("Du benötigst 1000 Erfahrungspunkte um diesen Befehl ausführen zu können!");
+                                                            Session.GetHabbo().Whisper("Du benÃ¶tigst 1000 Erfahrungspunkte um diesen Befehl ausfÃ¼hren zu kÃ¶nnen!");
                                                             return true;
                                                         }
 
@@ -7868,7 +7867,7 @@ namespace HabboIM.HabboHotel.Misc
                                                                         RoomUser Usr2 = class2.GetRoomUserByHabbo(User2.GetHabbo().Id);
                                                                         if (Math.Abs(Aktuelleruser.X - Usr2.X) < 3 && Math.Abs(Aktuelleruser.Y - Usr2.Y) < 3)
                                                                         {
-                                                                            Aktuelleruser.HandleSpeech(Session, "*" + User2.GetHabbo().Username + " gefällt mir nicht!*", true);
+                                                                            Aktuelleruser.HandleSpeech(Session, "*" + User2.GetHabbo().Username + " gefÃ¤llt mir nicht!*", true);
                                                                             Session.GetHabbo().GetEffectsInventoryComponent().method_2(165, true);
                                                                             User2.GetHabbo().GetEffectsInventoryComponent().method_2(165, true);
                                                                             System.Threading.Thread thrd = new System.Threading.Thread(delegate ()
@@ -7952,7 +7951,7 @@ namespace HabboIM.HabboHotel.Misc
                                                                         RoomUser Usr2 = class2.GetRoomUserByHabbo(User2.GetHabbo().Id);
                                                                         if (Math.Abs(Aktuelleruser.X - Usr2.X) < 3 && Math.Abs(Aktuelleruser.Y - Usr2.Y) < 3)
                                                                         {
-                                                                            Aktuelleruser.HandleSpeech(Session, "*Findet " + User2.GetHabbo().Username + " heiß!*", true);
+                                                                            Aktuelleruser.HandleSpeech(Session, "*Findet " + User2.GetHabbo().Username + " heiÃŸ!*", true);
                                                                             Session.GetHabbo().GetEffectsInventoryComponent().method_2(25, true);
                                                                             User2.GetHabbo().GetEffectsInventoryComponent().method_2(25, true);
                                                                             System.Threading.Thread thrd = new System.Threading.Thread(delegate ()
@@ -7979,7 +7978,7 @@ namespace HabboIM.HabboHotel.Misc
                                                                     }
                                                                     else
                                                                     {
-                                                                        Session.GetHabbo().Whisper("Du kannst diesen User nicht heiß finden, da ihr nicht befreundet seid!");
+                                                                        Session.GetHabbo().Whisper("Du kannst diesen User nicht heiÃŸ finden, da ihr nicht befreundet seid!");
                                                                         return true;
                                                                     }
                                                                 }
@@ -8020,7 +8019,7 @@ namespace HabboIM.HabboHotel.Misc
                                                         {
                                                             if (!(Session.GetHabbo().CurrentRoom.Owner == Session.GetHabbo().Username))
                                                             {
-                                                                Session.SendNotification("Du kannst die Sonne nur in deinen eigenen Räumen aktivieren!");
+                                                                Session.SendNotification("Du kannst die Sonne nur in deinen eigenen RÃ¤umen aktivieren!");
                                                                 result = true;
                                                                 return result;
                                                             }
@@ -8068,7 +8067,7 @@ namespace HabboIM.HabboHotel.Misc
                                                             Session.GetHabbo().GetEffectsInventoryComponent().method_2(16, true);
                                                             class2 = HabboIM.GetGame().GetRoomManager().GetRoom(Session.GetHabbo().CurrentRoomId);
                                                             class5 = class2.GetRoomUserByHabbo(Session.GetHabbo().Id);
-                                                            class5.HandleSpeech(Session, "*Zündet sich eine Zigarette an*", false);
+                                                            class5.HandleSpeech(Session, "*ZÃ¼ndet sich eine Zigarette an*", false);
                                                             System.Threading.Thread.Sleep(5000);
                                                             Session.GetHabbo().GetEffectsInventoryComponent().method_2(0, true);
                                                             return true;
@@ -8124,7 +8123,7 @@ namespace HabboIM.HabboHotel.Misc
                                                                     result = true;
                                                                     return result;
                                                                 }
-                                                                TargetClient.SendNotification("Deine Spielweise entspricht nicht unseren Regeln!\r\rVerhalte dich bitte unseren Regeln entsprechend.\r\rWeitere Verstöße führen zu einem Ausschluss aus der Community.");
+                                                                TargetClient.SendNotification("Deine Spielweise entspricht nicht unseren Regeln!\r\rVerhalte dich bitte unseren Regeln entsprechend.\r\rWeitere VerstÃ¶ÃŸe fÃ¼hren zu einem Ausschluss aus der Community.");
 
                                                             }
                                                             catch
@@ -8261,7 +8260,7 @@ namespace HabboIM.HabboHotel.Misc
                                                         }
                                                         else
                                                         {
-                                                            Session.GetHabbo().Whisper("Du besitzt nicht die nötigen Rechte.");
+                                                            Session.GetHabbo().Whisper("Du besitzt nicht die nÃ¶tigen Rechte.");
                                                             return true;
                                                         }
 
@@ -8283,7 +8282,7 @@ namespace HabboIM.HabboHotel.Misc
                                                         }
                                                         else
                                                         {
-                                                            Session.SendNotification("Du besitzt nicht die nötigen Rechte.");
+                                                            Session.SendNotification("Du besitzt nicht die nÃ¶tigen Rechte.");
                                                             return true;
                                                         }
 
@@ -8478,7 +8477,7 @@ namespace HabboIM.HabboHotel.Misc
                                                                     }
                                                                     else
                                                                     {
-                                                                        Session.GetHabbo().Whisper("Ihr müsst Freunde sein, um euch zu knuddeln!");
+                                                                        Session.GetHabbo().Whisper("Ihr mÃ¼sst Freunde sein, um euch zu knuddeln!");
                                                                         return true;
                                                                     }
                                                                 }
@@ -8500,7 +8499,7 @@ namespace HabboIM.HabboHotel.Misc
                                                             int numzahl = (int)Convert.ToInt16(Params[1]);
                                                             if (numzahl < 0 || numzahl > 3)
                                                             {
-                                                                Session.GetHabbo().Whisper("Wähle eine Tanz-ID zwischen 1-3 aus!");
+                                                                Session.GetHabbo().Whisper("WÃ¤hle eine Tanz-ID zwischen 1-3 aus!");
                                                                 result = true;
                                                                 return result;
                                                             }
@@ -8590,7 +8589,7 @@ namespace HabboIM.HabboHotel.Misc
                                                                 }
                                                                 else
                                                                 {
-                                                                    Session.SendNotification("Folgende Farben kannst du für dein IO Hawk nehmen:\r\r- weiss\r- gold\r- lila\r- pink\r- schwarz\r\rFarbe ausgesucht?\rSchreibe :iohawk <farbe>");
+                                                                    Session.SendNotification("Folgende Farben kannst du fÃ¼r dein IO Hawk nehmen:\r\r- weiss\r- gold\r- lila\r- pink\r- schwarz\r\rFarbe ausgesucht?\rSchreibe :iohawk <farbe>");
                                                                 }
 
                                                                 return true;
@@ -8609,27 +8608,27 @@ namespace HabboIM.HabboHotel.Misc
                                                                 if (Message == "gut")
                                                                 {
                                                                     Session.GetHabbo().GetEffectsInventoryComponent().method_2(701, true);
-                                                                    Session.GetHabbo().Whisper("Du fühlst dich gut!");
+                                                                    Session.GetHabbo().Whisper("Du fÃ¼hlst dich gut!");
                                                                 }
                                                                 else if (Message == "schlecht")
                                                                 {
                                                                     Session.GetHabbo().GetEffectsInventoryComponent().method_2(707, true);
-                                                                    Session.GetHabbo().Whisper("Du fühlst dich schlecht!");
+                                                                    Session.GetHabbo().Whisper("Du fÃ¼hlst dich schlecht!");
                                                                 }
                                                                 else if (Message == "cool")
                                                                 {
                                                                     Session.GetHabbo().GetEffectsInventoryComponent().method_2(706, true);
-                                                                    Session.GetHabbo().Whisper("Du fühlst dich cool!");
+                                                                    Session.GetHabbo().Whisper("Du fÃ¼hlst dich cool!");
                                                                 }
                                                                 else if (Message == "angry")
                                                                 {
                                                                     Session.GetHabbo().GetEffectsInventoryComponent().method_2(708, true);
-                                                                    Session.GetHabbo().Whisper("Du bist wütend!");
+                                                                    Session.GetHabbo().Whisper("Du bist wÃ¼tend!");
                                                                 }
                                                                 else if (Message == "verliebt")
                                                                 {
                                                                     Session.GetHabbo().GetEffectsInventoryComponent().method_2(710, true);
-                                                                    Session.GetHabbo().Whisper("Du bist verliebt! Wie süß.");
+                                                                    Session.GetHabbo().Whisper("Du bist verliebt! Wie sÃ¼ÃŸ.");
                                                                 }
                                                                 else if (Message == "bobba")
                                                                 {
@@ -8639,12 +8638,12 @@ namespace HabboIM.HabboHotel.Misc
                                                                 else if (Message == "surprised")
                                                                 {
                                                                     Session.GetHabbo().GetEffectsInventoryComponent().method_2(703, true);
-                                                                    Session.GetHabbo().Whisper("Du bist überrascht!");
+                                                                    Session.GetHabbo().Whisper("Du bist Ã¼berrascht!");
                                                                 }
                                                                 else if (Message == "happy")
                                                                 {
                                                                     Session.GetHabbo().GetEffectsInventoryComponent().method_2(700, true);
-                                                                    Session.GetHabbo().Whisper("Du bist glücklich!");
+                                                                    Session.GetHabbo().Whisper("Du bist glÃ¼cklich!");
                                                                 }
                                                                 else if (Message == "0")
                                                                 {
@@ -8652,7 +8651,7 @@ namespace HabboIM.HabboHotel.Misc
                                                                 }
                                                                 else
                                                                 {
-                                                                    Session.SendNotification("Zeige anderen wie du dich fühlst!\r\rWähle aus folgenden Gefühlen aus:\r\r- gut\r- schlecht\r- cool\r- angry\r- verliebt\r- bobba\r- surprised\r- happy\r\rGebe anschließend :feel <gefühl> ein!");
+                                                                    Session.SendNotification("Zeige anderen wie du dich fÃ¼hlst!\r\rWÃ¤hle aus folgenden GefÃ¼hlen aus:\r\r- gut\r- schlecht\r- cool\r- angry\r- verliebt\r- bobba\r- surprised\r- happy\r\rGebe anschlieÃŸend :feel <gefÃ¼hl> ein!");
                                                                 }
 
                                                                 return true;
@@ -8685,7 +8684,7 @@ namespace HabboIM.HabboHotel.Misc
                                                                 }
                                                                 else
                                                                 {
-                                                                    Session.GetHabbo().Whisper("Wähle eine Sprung-ID von 1-3 aus!");
+                                                                    Session.GetHabbo().Whisper("WÃ¤hle eine Sprung-ID von 1-3 aus!");
                                                                 }
 
                                                                 return true;
@@ -8715,7 +8714,7 @@ namespace HabboIM.HabboHotel.Misc
                                                                 }
                                                                 else
                                                                 {
-                                                                    Session.GetHabbo().Whisper("Wähle eine Lauf-ID von 1-2 aus!");
+                                                                    Session.GetHabbo().Whisper("WÃ¤hle eine Lauf-ID von 1-2 aus!");
                                                                 }
 
                                                                 return true;
@@ -8734,22 +8733,22 @@ namespace HabboIM.HabboHotel.Misc
                                                                 if (Message == "1")
                                                                 {
                                                                     Session.GetHabbo().GetEffectsInventoryComponent().method_2(611, true);
-                                                                    Session.GetHabbo().Whisper("Du trägst Waffen-ID: 1");
+                                                                    Session.GetHabbo().Whisper("Du trÃ¤gst Waffen-ID: 1");
                                                                 }
                                                                 else if (Message == "2")
                                                                 {
                                                                     Session.GetHabbo().GetEffectsInventoryComponent().method_2(612, true);
-                                                                    Session.GetHabbo().Whisper("Du trägst Waffen-ID: 2");
+                                                                    Session.GetHabbo().Whisper("Du trÃ¤gst Waffen-ID: 2");
                                                                 }
                                                                 else if (Message == "3")
                                                                 {
                                                                     Session.GetHabbo().GetEffectsInventoryComponent().method_2(615, true);
-                                                                    Session.GetHabbo().Whisper("Du trägst Waffen-ID: 3");
+                                                                    Session.GetHabbo().Whisper("Du trÃ¤gst Waffen-ID: 3");
                                                                 }
                                                                 else if (Message == "4")
                                                                 {
                                                                     Session.GetHabbo().GetEffectsInventoryComponent().method_2(616, true);
-                                                                    Session.GetHabbo().Whisper("Du trägst Waffen-ID: 4");
+                                                                    Session.GetHabbo().Whisper("Du trÃ¤gst Waffen-ID: 4");
                                                                 }
                                                                 else if (Message == "0")
                                                                 {
@@ -8758,7 +8757,7 @@ namespace HabboIM.HabboHotel.Misc
                                                                 }
                                                                 else
                                                                 {
-                                                                    Session.GetHabbo().Whisper("Wähle eine Waffen-ID von 1-4 aus!");
+                                                                    Session.GetHabbo().Whisper("WÃ¤hle eine Waffen-ID von 1-4 aus!");
                                                                 }
 
                                                                 return true;
@@ -8792,11 +8791,11 @@ namespace HabboIM.HabboHotel.Misc
                                                                 else if (Message == "2")
                                                                 {
                                                                     Session.GetHabbo().GetEffectsInventoryComponent().method_2(654, true);
-                                                                    Session.GetHabbo().Whisper("du trägst jetzt 1 mini fabsi auf deinem kopf!!");
+                                                                    Session.GetHabbo().Whisper("du trÃ¤gst jetzt 1 mini fabsi auf deinem kopf!!");
                                                                 }
                                                                 else
                                                                 {
-                                                                    Session.GetHabbo().Whisper("wähle eine fabsi id zwischen 1-2 aus meeeen!");
+                                                                    Session.GetHabbo().Whisper("wÃ¤hle eine fabsi id zwischen 1-2 aus meeeen!");
                                                                 }
 
                                                                 return true;
@@ -8815,16 +8814,16 @@ namespace HabboIM.HabboHotel.Misc
                                                                 if (Message == "1")
                                                                 {
                                                                     Session.GetHabbo().GetEffectsInventoryComponent().method_2(681, true);
-                                                                    Session.GetHabbo().Whisper("du bist jetzt 1 mini görksi");
+                                                                    Session.GetHabbo().Whisper("du bist jetzt 1 mini gÃ¶rksi");
                                                                 }
                                                                 else if (Message == "2")
                                                                 {
                                                                     Session.GetHabbo().GetEffectsInventoryComponent().method_2(655, true);
-                                                                    Session.GetHabbo().Whisper("du trägst jetzt 1 mini görksi auf deinem kopf!!");
+                                                                    Session.GetHabbo().Whisper("du trÃ¤gst jetzt 1 mini gÃ¶rksi auf deinem kopf!!");
                                                                 }
                                                                 else
                                                                 {
-                                                                    Session.GetHabbo().Whisper("wähle eine görksi id zwischen 1-2 aus meeeen!");
+                                                                    Session.GetHabbo().Whisper("wÃ¤hle eine gÃ¶rksi id zwischen 1-2 aus meeeen!");
                                                                 }
 
                                                                 return true;
@@ -8892,7 +8891,7 @@ namespace HabboIM.HabboHotel.Misc
                                                             }
                                                             catch
                                                             {
-                                                                Session.GetHabbo().Whisper("Du besitzt nicht die nötigen Rechte.");
+                                                                Session.GetHabbo().Whisper("Du besitzt nicht die nÃ¶tigen Rechte.");
                                                             }
 
                                                             HabboIM.GetGame().GetClientManager().method_31(Session, Params[0].ToLower(), Input);
@@ -8991,14 +8990,14 @@ namespace HabboIM.HabboHotel.Misc
                                                                             Session.SendNotification("Friendstream Eintrag erfolgreich erstellt!");
                                                                         }
                                                                         else
-                                                                            Session.SendNotification("Du kannst nur alle 15 Minuten einen Friendstream Eintrag erstellen! Versuchs später nochmal.");
+                                                                            Session.SendNotification("Du kannst nur alle 15 Minuten einen Friendstream Eintrag erstellen! Versuchs spÃ¤ter nochmal.");
                                                                     }
                                                                 }
 
                                                             }
                                                             else
                                                             {
-                                                                Session.SendNotification("Um einen Friendstream Eintrag posten zu können, benötigst du 1100 Erfahrungspunkte und musst mindestens 7 Tage im Habbo registriert sein!");
+                                                                Session.SendNotification("Um einen Friendstream Eintrag posten zu kÃ¶nnen, benÃ¶tigst du 1100 Erfahrungspunkte und musst mindestens 7 Tage im Habbo registriert sein!");
 
 
 
@@ -9155,13 +9154,13 @@ namespace HabboIM.HabboHotel.Misc
                                                 }
                                                 if (!Session.GetHabbo().Raumalert)
                                                 {
-                                                    Session.SendNotification("Aufgrund eines Regelverstoßes wurde dir dieser Befehl entzogen!");
+                                                    Session.SendNotification("Aufgrund eines RegelverstoÃŸes wurde dir dieser Befehl entzogen!");
                                                     result = true;
                                                     return result;
                                                 }
                                                 if (!(Session.GetHabbo().CurrentRoom.Owner == Session.GetHabbo().Username))
                                                 {
-                                                    Session.SendNotification("Du kannst nur in deinen eigenen Räumen einen Alert versenden!");
+                                                    Session.SendNotification("Du kannst nur in deinen eigenen RÃ¤umen einen Alert versenden!");
                                                     result = true;
                                                     return result;
                                                 }
@@ -9344,7 +9343,7 @@ namespace HabboIM.HabboHotel.Misc
                                     class5 = class2.GetRoomUserByHabbo(Session.GetHabbo().Id);
                                     if (class5.Boolean_3)
                                     {
-                                        Session.GetHabbo().Whisper("Command kann nicht währrend eines Tauschvorgangs benutzt werden. ");
+                                        Session.GetHabbo().Whisper("Command kann nicht wÃ¤hrrend eines Tauschvorgangs benutzt werden. ");
                                         result = true;
                                         return result;
                                     }
@@ -9373,7 +9372,7 @@ namespace HabboIM.HabboHotel.Misc
                         {
                             "\n\nUsers Online: ",
                             clients,
-                            "\nRäume geladen: ",
+                            "\nRÃ¤ume geladen: ",
                             rooms
                         });
                     }
