@@ -1632,7 +1632,7 @@ namespace HabboIM.HabboHotel.Rooms
                                 GameClient gameClient = HabboIM.GetGame().GetClientManager().method_2(RoomUser_1.GetClient().GetHabbo().Id);
                                 if (gameClient != null)
                                 {
-                                    gameClient.SendNotification("Glückwunsch, du hast soeben ein Möbelstück erhalten.");
+                                    gameClient.SendNotification("GlÃ¼ckwunsch, du hast soeben ein MÃ¶belstÃ¼ck erhalten.");
                                     gameClient.GetHabbo().GetInventoryComponent().method_9(true);
                                 }
                                 return;
@@ -2370,7 +2370,7 @@ namespace HabboIM.HabboHotel.Rooms
                                                 }
                                                 else
                                                 {
-                                                    GetPlayerSession.SendNotification("Wired: Potki käyttäjä wired-tavara on potkinut sinut huoneesta!");
+                                                    GetPlayerSession.SendNotification("Wired: Potki kÃ¤yttÃ¤jÃ¤ wired-tavara on potkinut sinut huoneesta!");
                                                 }
                                             }
                                             flag2 = true;
@@ -3548,7 +3548,7 @@ namespace HabboIM.HabboHotel.Rooms
                                             {
                                                 class3.GetClient().GetHabbo().IsMuted = false;
                                                 class3.GetClient().GetHabbo().GetEffectsInventoryComponent().method_2(0, true);
-                                                //class3.GetClient().GetHabbo().Whisper("Bitte benutze die Chatfunktion zukünftig etwas langsamer.");
+                                                
                                             }
                                         }
                                     }
