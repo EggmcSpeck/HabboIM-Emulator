@@ -588,7 +588,7 @@ namespace HabboIM.HabboHotel.Users
 
             if(this.boyfriend == 0 || this.lovepoints < 100)
             {
-                this.int_0 = 0;     // LOVELEVEL SINGÖÖÖL
+                this.int_0 = 0;
 
             } else
             {
@@ -607,97 +607,7 @@ if(this.lovepoints > 100)
 
                     }
                 }
-                /*
-
-                100 Beziehungspunkte > Badge + 5 Aktivitätspunkte
-175 Beziehungspunkte > Badge + 10 Aktivitätspunkte + 2000 Taler
-250 Beziehungspunkte > Badge + 5 Diamanten + 10 Aktivitätspunkte
-325 Beziehungspunkte > Badge + 10 Diamanten + 5 Aktivitätspunkte + 10000 Taler
-400 Beziehungspunkte > Badge + 15 Diamanten + 30000 Taler
-475 Beziehungspunkte > Badge + 75000 Taler
-525 Beziehungspunkte > Badge + 50 Diamanten + 10 Aktivitätspunkte
-600 Beziehungspunkte > Badge + 35000 Taler
-775 Beziehungspunkte > Badge + Rarität
-825 Beziehungspunkte > Badge + 20 Aktivitätspunkte
-900 Beziehungspunkte > Badge + 80000 Taler
-1000 Beziehungspunkte > Badge + 100 Diamanten +
-
-
-            */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             }
-
-
-
-
-
-            /*  this.dataTable_0 = class6_0.ReadDataTable("SELECT * FROM group_memberships WHERE userid = " + this.Id, 30);
-              if (this.dataTable_0 != null)
-              {
-                  foreach (DataRow dataRow in this.dataTable_0.Rows)
-                  {
-                      GroupsManager @class = Groups.smethod_2((int)dataRow["groupid"]);
-                      if (@class == null)
-                      {
-                          DataTable dataTable = class6_0.ReadDataTable("SELECT * FROM groups WHERE Id = " + (int)dataRow["groupid"] + " LIMIT 1;", 30);
-                          IEnumerator enumerator2 = dataTable.Rows.GetEnumerator();
-                          try
-                          {
-                              while (enumerator2.MoveNext())
-                              {
-                                  DataRow dataRow2 = (DataRow)enumerator2.Current;
-                                  if (!Groups.GroupsManager.ContainsKey((int)dataRow2["Id"]))
-                                  {
-                                      Groups.GroupsManager.Add((int)dataRow2["Id"], new GroupsManager((int)dataRow2["Id"], dataRow2, class6_0));
-                                  }
-                              }
-                              continue;
-                          }
-                          finally
-                          {
-                              IDisposable disposable = enumerator2 as IDisposable;
-                              if (disposable != null)
-                              {
-                                  disposable.Dispose();
-                              }
-                          }
-                      }
-                      if (!@class.list_0.Contains((int)this.Id))
-                      {
-                          @class.method_0((int)this.Id);
-                      }
-                  }
-                  int num = class6_0.ReadInt32("SELECT groupid FROM user_stats WHERE Id = " + this.Id + " LIMIT 1", 30);
-                  GroupsManager class2 = Groups.smethod_2(num);
-                  if (class2 != null)
-                  {
-                      this.int_0 = num;
-                  }
-                  else
-                  {
-                      this.int_0 = 0;
-                  }
-              }
-              else
-              {
-                  this.int_0 = 0;
-
-        }
-
-    */
         }
 
         internal void method_1(DatabaseClient class6_0)
@@ -1023,21 +933,10 @@ if(this.lovepoints > 100)
                         "' LIMIT 1;"
                 }));
             }
-
-
-
-
-
-
-
         }
-
-
 
         public void UpdateSupport()
         {
-
-
             using (DatabaseClient dbClient = HabboIM.GetDatabase().GetClient())
             {
                 dbClient.ExecuteQuery(string.Concat(new object[]
@@ -1049,15 +948,7 @@ if(this.lovepoints > 100)
                         "' LIMIT 1;"
                 }));
             }
-
-
-
-
-
-
-
         }
-
 
         public void UpdateCredits(bool updateDatabase)
         {
@@ -1096,9 +987,6 @@ if(this.lovepoints > 100)
                     }), 30);
                 }
             }
-
-
-
         }
 
         public void UpdateVipPoints(bool getPoints, bool updateDatabase)
