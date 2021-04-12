@@ -103,7 +103,7 @@ namespace HabboIM.HabboHotel.GameClients
                     if (ServerConfiguration.EnableSSO)
                     {
                         str = HabboIMEnvironment.GetExternalText("emu_sso_wrong_secure") + "(" + this.GetConnection().String_0 + ")";
-                        //str = HabboIMEnvironment.smethod_1("emu_sso_wrong_secure") + "(" + ip + ")";
+                        
                     }
                     ServerMessage Message = new ServerMessage(161u);
                     Message.AppendStringWithBreak(HabboIMEnvironment.GetExternalText("emu_sso_wrong") + str);
@@ -207,9 +207,7 @@ namespace HabboIM.HabboHotel.GameClients
 
             if (this.GetHabbo().HasFuse("acc_supporttool"))
             {
-                //this.GetHabbo().isAaronble = true;
-                //this.GetHabbo().AllowGift = true;
-                //this.GetRoomUser().id = (uint)HabboIM.GetGame().method_4().method_9();
+       
 
                 this.SendMessage(HabboIM.GetGame().GetModerationTool().method_0());
                 HabboIM.GetGame().GetModerationTool().method_4(this);
@@ -539,10 +537,10 @@ namespace HabboIM.HabboHotel.GameClients
 			}
 			else
 			{
-				if (true)//Class13.Boolean_7)
+				if (true)
 				{
                     this.Connection.SendMessage(CrossdomainPolicy.GetXmlPolicy());
-                    //this.Message1_0.SendData(HabboIM.GetDefaultEncoding().GetBytes(CrossdomainPolicy.GetXmlPolicy()));
+                    this.Message1_0.SendData(HabboIM.GetDefaultEncoding().GetBytes(CrossdomainPolicy.GetXmlPolicy()));
 				    this.Connection.Close();
 				}
 			}
