@@ -60,7 +60,6 @@ namespace HabboIM.WebSocket
             {
                 case LogLevel.Error:
                     {
-                        //Logging.LogException(s + ex.ToString());
                         break;
                     }
             }
@@ -95,8 +94,7 @@ namespace HabboIM.WebSocket
             socketbyName = new Dictionary<string, IWebSocketConnection>();
             namebySocket = new Dictionary<IWebSocketConnection, string>();
             server = new WebSocketServer(SocketURL);
-            /*if (SocketURL.StartsWith("wss://"))
-                server.Certificate = new System.Security.Cryptography.X509Certificates.X509Certificate2("client.habbo.tl.cert.cer"); */
+
             server.Start(socket =>
             {
                 socket.OnOpen = () =>
@@ -320,13 +318,9 @@ namespace HabboIM.WebSocket
                                         if (class4 == null)
                                         {
                                             HabboIM.GetWebSocketManager().getWebSocketByName(Session.GetHabbo().Username).Send("textosteron|Trennung|Du hast Schluss gemacht.");
-
-                                      //      Session.SendNotification("Du hast erfolgreich Schluss gemacht!");
                                         }
                                     } catch(Exception x)
                                     {
-                                  //      Session.SendNotification(x.ToString());
-
 
                                     }
 
@@ -335,14 +329,6 @@ namespace HabboIM.WebSocket
 
                                     break;
                                 }
-
-                              
-
-
-
-                                
-
-
                             case 6:
                                 {
                                     try
@@ -612,7 +598,7 @@ namespace HabboIM.WebSocket
         internal uint method_14()
         {
             string abcde = "dev";
-            //HabboIM.GetWebSocketManager().SendMessageToEveryConnection(abcde);
+            HabboIM.GetWebSocketManager().SendMessageToEveryConnection(abcde);
             lock (this.object_0)
                 return this.uint_0++;
         }
