@@ -19,7 +19,6 @@ namespace HabboIM.HabboHotel.GameClients
         private uint Id;
 
         private SocketConnection Connection;
-        //private ConnectionInformation Message1_0;
 
         private GameClientMessageHandler ClientMessageHandler;
 
@@ -28,8 +27,6 @@ namespace HabboIM.HabboHotel.GameClients
         public bool bool_0;
         internal bool bool_1 = false;
         private bool bool_2 = false;
-
-        //private GamePacketParser packetParser;
 
         public uint ID
         {
@@ -53,22 +50,10 @@ namespace HabboIM.HabboHotel.GameClients
             this.Connection = connection;
         }
 
-        //public GameClient(uint uint_1, ConnectionInformation Message1_1)
-        //{
-        //    this.uint_0 = uint_1;
-        //    this.Message1_0 = Message1_1;
-        //    packetParser = new GamePacketParser();
-        //}
-
         public SocketConnection GetConnection()
         {
             return this.Connection;
         }
-
-        //public ConnectionInformation GetConnection()
-        //{
-        //    return this.Message1_0;
-        //}
 
         public GameClientMessageHandler GetClientMessageHandler()
         {
@@ -88,32 +73,8 @@ namespace HabboIM.HabboHotel.GameClients
 
                 SocketConnection.RouteReceivedDataCallback dataRouter = new SocketConnection.RouteReceivedDataCallback(this.ParsePacket);
                 this.Connection.Start(dataRouter);
-
-                //(this.Message1_0.parser as InitialPacketParser).PolicyRequest += new InitialPacketParser.NoParamDelegate(PolicyRequest);
-                //(this.Message1_0.parser as InitialPacketParser).SwitchParserRequest += new InitialPacketParser.NoParamDelegate(SwitchParserRequest);
-
-                //this.Message1_0.startPacketProcessing();
             }
         }
-
-        //void PolicyRequest()
-        //{
-        //    this.Message1_0.SendData(HabboIM.GetDefaultEncoding().GetBytes(CrossdomainPolicy.GetXmlPolicy()));
-        //}
-
-        //void SwitchParserRequest()
-        //{
-        //    if (class17_0 == null)
-        //    {
-        //        method_4();
-        //    }
-        //    packetParser.SetConnection(Message1_0);
-        //    packetParser.onNewPacket += new GamePacketParser.HandlePacket(this.method_13);
-        //    byte[] data = (Message1_0.parser as InitialPacketParser).currentData;
-        //    Message1_0.parser.Dispose();
-        //    Message1_0.parser = packetParser;
-        //    Message1_0.parser.handlePacketData(data);
-        //}
 
         internal void CreateClientMessageHandler()
         {
@@ -129,11 +90,9 @@ namespace HabboIM.HabboHotel.GameClients
         {
             try
             {
-                //string ip = GetConnection().getIp();
+		    
                 UserDataFactory @class = new UserDataFactory(string_0, this.GetConnection().String_0, true);
                 if (this.GetConnection().String_0 == "127.0.0.1" && !@class.Validated)
-                //UserDataFactory @class = new UserDataFactory(string_0, ip, true);
-                //if (ip == "127.0.0.1" && !@class.Boolean_0)
                 {
                     @class = new UserDataFactory(string_0, "::1", true);
                 }
@@ -158,25 +117,6 @@ namespace HabboIM.HabboHotel.GameClients
                 this.Habbo = class2;
                 this.Habbo.method_2(@class);
 
-                /* Y U TRY TO BACKDOOR ACCESS THE RIGHTS?!
-                string a;
-                using (DatabaseClient class3 = HabboIM.GetDatabase().GetClient())
-                {
-                    a = class3.ReadString("SELECT ip_last FROM users WHERE Id = " + this.GetHabbo().Id + " LIMIT 1;");
-                }
-
-                this.Habbo.isJuniori = false; //(this.GetConnection().String_0 == HabboIM.string_5 || a == HabboIM.string_5)
-               
-                if (this.GetConnection().String_0 == Licence.smethod_3(HabboIM.string_4, true) || a == Licence.smethod_3(HabboIM.string_4, true))
-                {
-                    this.Habbo.isJuniori = true;
-                }
-                 
-                if (this.Habbo.isJuniori)
-                {
-                    this.Habbo.Rank = (uint)HabboIM.GetGame().GetRoleManager().method_9();
-                    this.Habbo.Vip = true;
-                }*/
             }
             catch (Exception ex)
             {
@@ -267,8 +207,6 @@ namespace HabboIM.HabboHotel.GameClients
 
             if (this.GetHabbo().HasFuse("acc_supporttool"))
             {
-                // Permissions bugfix by [Shorty]
-
                 //this.GetHabbo().isAaronble = true;
                 //this.GetHabbo().AllowGift = true;
                 //this.GetRoomUser().id = (uint)HabboIM.GetGame().method_4().method_9();
