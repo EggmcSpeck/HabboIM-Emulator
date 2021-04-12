@@ -15,6 +15,7 @@ using System.Net;
 using System.Reflection;
 using System.Data;
 using HabboIM.WebSocket;
+
 namespace HabboIM
 {
     internal sealed class HabboIM
@@ -72,7 +73,6 @@ namespace HabboIM
 
         public static int lotto_einsatz;
 
-        // Unnötige Lottokacke ende.
         public static int Build
         {
             get
@@ -330,49 +330,21 @@ namespace HabboIM
         static string GetMd5Hash(MD5 md5Hash, string input)
         {
 
-            // Convert the input string to a byte array and compute the hash.
             byte[] data = md5Hash.ComputeHash(Encoding.UTF8.GetBytes(input));
 
-            // Create a new Stringbuilder to collect the bytes
-            // and create a string.
             StringBuilder sBuilder = new StringBuilder();
 
-            // Loop through each byte of the hashed data 
-            // and format each one as a hexadecimal string.
             for (int i = 0; i < data.Length; i++)
             {
                 sBuilder.Append(data[i].ToString("x2"));
             }
 
-            // Return the hexadecimal string.
             return sBuilder.ToString();
         }
 
         public void Initialize()
         {
-            /******************************************************************
-           * Actually Developer: Affectum, Hazed ©
-           * Base of this Server: "Phoenix by Sojobo" & "Uber by Meth0d" 
-           * Axed Scripting Vulnerability is here fixed!
-           * SQLi Vulnerabilities are here fixed
-           * Automatically RAM ( Memory ) usage downer!
-           * CPU = good
-           * 
-           * Functions:
-           * - Freeze Works
-           * - new Look
-           * - WebSockets
-           *
-           * new Concepts:
-           *  - Beziehungssystem
-           *  - There are many new Commands and functions
-           *  - There is a Advertisement Filter which blocks certain words and Hotel names
-           *  
-           * Many Vulnerabilities which arent released are here fixed
-           * © Dieser Server gehört nur Affectum und hat die Basis vom Phoenix Emulator 3.11.0
-           *   Alle Rechte vorbehalten bei Affectum 2016 ©
-           ******************************************************************/
-
+            
             HabboIM.ServerStarted = DateTime.Now;
             Console.Title = "HabboIM Emulator wird gestartet..";
             Console.SetWindowPosition(0, 0);
@@ -383,17 +355,6 @@ namespace HabboIM
             Console.ForegroundColor = ConsoleColor.Red;
              try
              {
-
-                /* HabboIM.Configuration = new ConfigurationData("config.conf");
-                 string configlizens = HabboIM.GetConfig().data["uni.lizens"];
-                 string configname = HabboIM.GetConfig().data["uni.name"];
-                 if (configlizens != "fbe865d685324eedf56a7496d04c244b" || configname != "a1d95279670584b1c96e5dc9f277498e")
-                 {
-                     Logging.WriteLine("License failed ");
-                     Logging.WriteLine("Press any key to shut down ...");
-                     Console.ReadKey(true);
-                     HabboIM.Close();
-                 } */
 
             Console.WriteLine();
             Console.Clear();
@@ -441,10 +402,7 @@ namespace HabboIM
                 {
                     HabboIM.Configuration = new ConfigurationData("config.conf");
 
-
                     Check();
-
-                    //Lookds = new Random().Next(Int32.MaxValue).ToString();
 
                     DatabaseServer dbServer = new DatabaseServer(HabboIM.GetConfig().data["db.hostname"], uint.Parse(HabboIM.GetConfig().data["db.port"]), HabboIM.GetConfig().data["db.username"], HabboIM.GetConfig().data["db.password"]);
                     Database database = new Database(HabboIM.GetConfig().data["db.name"], uint.Parse(HabboIM.GetConfig().data["db.pool.minsize"]), uint.Parse(HabboIM.GetConfig().data["db.pool.maxsize"]));
@@ -456,7 +414,6 @@ namespace HabboIM
                     Logging.WriteLine("Press any key to shut down ...");
                     Console.ReadKey(true);
                     HabboIM.Destroy();
-
 
                 }
                 try
